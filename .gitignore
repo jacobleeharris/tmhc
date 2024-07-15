@@ -1,0 +1,12 @@
+.venv
+build
+.vscode
+.idea
+cmake-build-*
+asm
+assets
+*.elf
+undefined_syms_auto.txt
+undefined_funcs_auto.txt
+nonmatchings/
+*.ld
