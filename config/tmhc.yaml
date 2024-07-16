@@ -23,40 +23,40 @@ options:
   disasm_unknown: True
   named_regs_for_c_funcs: False
 segments:
-    - [0, databin, elf_header]
-    - name: main
-      type: code
-      start: 0x1000
-      vram: 0x2100000
-      bss_size: 0x3fbcf8
-      subalign: null
-      subsegments:
-        # .text
-        - [0x1000, asm, sdk/crt0]
-        - [0x1280, asm, tmhc/action_mgr]
-        - [0x1930, asm, tmhc/action_context]
-        - [0x1fc0, asm, tmhc/car_ai]
-        - [0xca80, asm, tmhc/breadcrumbs]
-        - [0xcbf8, asm, tmhc/ai_char_round_robin]
-        - [0xcc10, asm, tmhc/ai_char]
-        - [0x10f08, asm, tmhc/ai_char_anim]
-        - [0x110e8, asm, tmhc/ai_anim_aim_at]
-        - [0x11348, asm, tmhc/ai_char_attract_pts]
+  - [0, databin, elf_header]
+  - name: main
+    type: code
+    start: 0x1000
+    vram: 0x2100000
+    bss_size: 0x3fbcf8
+    subalign: null
+    subsegments:
+      # .text
+      - [0x1000, asm, sdk/crt0]
+      - [0x1280, asm, tmhc/action_mgr]
+      - [0x1930, asm, tmhc/action_context]
+      - [0x1fc0, asm, tmhc/car_ai]
+      - [0xca80, asm, tmhc/breadcrumbs]
+      - [0xcbf8, asm, tmhc/ai_char_round_robin]
+      - [0xcc10, asm, tmhc/ai_char]
+      - [0x10f08, asm, tmhc/ai_char_anim]
+      - [0x110e8, asm, tmhc/ai_anim_aim_at]
+      - [0x11348, asm, tmhc/ai_char_attract_pts]
 
-        - [0x299c10, databin] # .vutext
-        - [0x2a6d00, data] # .data
-        - [0x2c8e00, rodata] # .rodata
-        - [0x32bf00, databin] # .gcc_except_table
-        - [0x32c080, sdata] # .sdata
-        # - [0xb54, sbss] # .sbss
-        - [0x32f6d4, databin] # .reginfo
-        - [0x3330b4, databin] # .DVP.overlay
-        - [0x338aec, databin] # .debug_str
-        - [0x339b38, databin] # .stab
-        - [0x353644, databin] # .stabstr
-        - [0x353774, databin] # .mdebug
-        - [0x3fbcf8, bss] # .bss
-        - [0x445360, databin] # .symtab
-        - [0x48c420, databin] # .strtab
-        - [0x4f670b, databin] # .shstrtab
-    - [0x4f6aac]
+      - [0x299c10, databin] # .vutext
+      - [0x2a6d00, data] # .data
+      - [0x2c8e00, rodata] # .rodata
+      - [0x32bf00, databin] # .gcc_except_table
+      - [0x32c080, sdata] # .sdata
+      # - [0xb54, sbss] # .sbss
+      - [0x32f6d4, databin] # .reginfo
+      - [0x3330b4, databin] # .DVP.overlay
+      - [0x338aec, databin] # .debug_str
+      - [0x339b38, databin] # .stab
+      - [0x353644, databin] # .stabstr
+      - [0x353774, databin] # .mdebug
+      - [0x3fbcf8, bss] # .bss
+      - [0x445360, databin] # .symtab
+      - [0x48c420, databin] # .strtab
+      - [0x4f670b, databin] # .shstrtab
+  - [0x4f6aac]

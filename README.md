@@ -3,11 +3,11 @@ This repository contains a work-in-progress matching decompilation of the unrele
 
 Note: This repository assumes a POSIX environment. Please use WSL or Docker on a Windows machine.
 
-SLPS_123.45 SHA-1 Hash: `59695de214d38d1c0af9167412271fe2a446a13a`
+TM.ELF SHA-1 Hash: `59695de214d38d1c0af9167412271fe2a446a13a`
 
 # Setup
-1. Extract SLPS_123.45 from "Twisted_Metal-Harbor_City-2004-01-29-Early_02-Rebuild.iso"
-2. Rename to TMHC.elf
+1. Extract TM.ELF from "TMHC_Later_Working.iso" (2005-08-11)
+2. Rename to TMHC.ELF
 3. Place in config folder
 4. Create virtual Python environment using `venv` with command: `python -m venv .venv`
 5. Activate virtual Python environment with command: `source .venv/Scripts/activate`
