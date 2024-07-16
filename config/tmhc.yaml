@@ -19,7 +19,6 @@ options:
   build_path: build
   section_order: [".text", ".data", ".rodata", ".bss"]
   auto_all_sections: [".data", ".rodata", ".bss"]
-  subalign: 8
   disasm_unknown: True
   named_regs_for_c_funcs: False
 segments:
@@ -29,7 +28,8 @@ segments:
     start: 0x1000
     vram: 0x2100000
     bss_size: 0x3fbcf8
-    subalign: null
+    subalign: 1
+    align: 4
     subsegments:
       # .text
       - [0x1000, asm, sdk/crt0]
@@ -116,10 +116,10 @@ segments:
       - [0x342e0, asm, tmhc/burning_man]
 
       - [0x299c10, databin] # .vutext
-      - [0x2a6d00, data] # .data
-      - [0x2c8e00, rodata] # .rodata
+      - [0x2a6d00, databin] # .data
+      - [0x2c8e00, databin] # .rodata
       - [0x32bf00, databin] # .gcc_except_table
-      - [0x32c080, sdata] # .sdata
+      - [0x32c080, databin] # .sdata
       # - [0xb54, sbss] # .sbss
       - [0x32f6d4, databin] # .reginfo
       - [0x3330b4, databin] # .DVP.overlay
@@ -127,8 +127,8 @@ segments:
       - [0x339b38, databin] # .stab
       - [0x353644, databin] # .stabstr
       - [0x353774, databin] # .mdebug
-      - [0x3fbcf8, bss] # .bss
+      - [0x3fbcf8, databin] # .bss
       - [0x445360, databin] # .symtab
       - [0x48c420, databin] # .strtab
       - [0x4f670b, databin] # .shstrtab
-  - [0x4f6aac]
+  - [0x4f71b4]
