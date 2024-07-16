@@ -29,7 +29,8 @@ $(BUILD_DIR)/%.s.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
 
 # Link .o files into resulting executable
-$(TARGET):
+$(TARGET): $(S_OBJ_FILES)
+	@mkdir -p $$(dirname $@)
 	$(LD) -T TMHC.ld -T config/undefined_funcs_auto.txt -T config/undefined_syms_auto.txt -o $@
 
 clean:
