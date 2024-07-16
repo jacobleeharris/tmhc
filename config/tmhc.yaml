@@ -33,6 +33,7 @@ segments:
     subsegments:
       # .text
       - [0x1000, asm, sdk/crt0]
+
       - [0x1280, asm, tmhc/action_mgr]
       - [0x1930, asm, tmhc/action_context]
       - [0x1fc0, asm, tmhc/car_ai]
@@ -114,6 +115,24 @@ segments:
       - [0x33788, asm, tmhc/bullet_casing]
       - [0x33e40, asm, tmhc/bullet_casings]
       - [0x342e0, asm, tmhc/burning_man]
+      - [0x34ec8, asm, tmhc/burning_men]
+      - [0x350e0, asm, tmhc/cameras]
+      - [0x35558, asm, tmhc/camera]
+      - [0x358e8, asm, tmhc/car]
+      - [0x3d1b8, asm, tmhc/car_anim]
+      - [0x3dff8, asm, tmhc/car_camera]
+      - [0x40258, asm, tmhc/car_control]
+      - [0x42960, asm, tmhc/car_destruct]
+      - [0x42ba0, asm, tmhc/car_dead_hull]
+      - [0x43dd8, asm, tmhc/car_dyn]
+      - [0x4d3a0, asm, tmhc/car_hud_main_element]
+      - [0x4d400, asm, tmhc/car_hud_radar_element]
+      - [0x4dbd8, asm, tmhc/car_hud_online_lower_left_score_element]
+      - [0x4dd80, asm, tmhc/car_hud_online_lower_center_score_element]
+      - [0x4deb0, asm, tmhc/car_hud_online_upper_right_score_element]
+      - [0x4dfd0, asm, tmhc/car_hud_car_indicators_element]
+      # TODO: Why are there two of these?
+      - [0x4fd08, asm, tmhc/car_hud_radar_element_2]
 
       - [0x299c10, databin] # .vutext
       - [0x2a6d00, databin] # .data
