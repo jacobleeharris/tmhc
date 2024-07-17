@@ -1,0 +1,3 @@
+// ActionContext
+init__13ActionContextP9ActionMgrRA3_A3_fP8_fvectorP12Destructible = 0x02100930;
+__as__13ActionContextR13ActionContext = 0x02100970;
