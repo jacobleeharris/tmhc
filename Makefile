@@ -5,14 +5,13 @@ ASM_DIR := asm
 BUILD_DIR := build
 
 # Compiler options
-CC := tools/ee-gcc-3.2-040921/bin/ee-gcc
-CXX := tools/ee-gcc-3.2-040921/bin/ee-g++
+CXX := tools/ee-gcc2.95.3-136/bin/ee-gcc
 AS := mipsel-linux-gnu-as
 LD := mipsel-linux-gnu-ld
 OBJCOPY	:= mipsel-linux-gnu-objcopy
 
 ASFLAGS	:= -march=r5900 -mabi=eabi -no-pad-sections -I$(INCLUDE_DIR)
-CXXFLAGS := -Wall -Wextra -fno-exceptions -ffreestanding -I$(INCLUDE_DIR)
+CXXFLAGS := -Wall -Wextra -fno-exceptions -ffreestanding -c++ -I$(INCLUDE_DIR)
 
 # Other
 TARGET := $(BUILD_DIR)/tmhc.elf
