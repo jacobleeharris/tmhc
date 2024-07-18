@@ -194,7 +194,7 @@ segments:
       - [0x846c8, asm, tmhc/dynodebris] # DynODebris.cpp
       - [0x86a80, asm, tmhc/dynointeractive] # DynOInteractive.cpp
       - [0x88688, asm, tmhc/dynpappy] # DynPappy.cpp
-      - [0x88890, asm, tmhc/eestrmbuff] # EEStrmBuff.cpp?
+      - [0x88990, asm, tmhc/eestrmbuff] # EEStrmBuff.cpp?
       - [0x89518, asm, tmhc/endurancescript] # endurancescript.cpp
       - [0x89e80, asm, tmhc/endurancewinmenu]
       - [0x8a4b0, asm, tmhc/endurancelosemenu]
@@ -241,8 +241,7 @@ segments:
       - [0xace20, asm, tmhc/animlevelobjectsound]
       - [0xace80, asm, tmhc/pathsoundemittermanager]
       - [0xadaf0, asm, tmhc/listpager] # ListPager.cpp
-      - [0xae290, asm, tmhc/whmemcardgraph] # MemcardGraph.cpp?
-      - [0xaf270, asm, tmhc/mcmenus] # McMenus.cpp
+      - [0xae290, asm, tmhc/mcmenus] # McMenus.cpp
       - [0xb2060, asm, tmhc/mcpersist] # McPersist.cpp
       - [0xb3488, asm, tmhc/menufactory] # MenuFactory.cpp
 
@@ -371,6 +370,7 @@ segments:
       - [0x142e88, asm, tmhc/worldloader] # WorldLoader.cpp
       - [0x143428, asm, tmhc/zoneloader] # ZoneLoader.cpp
       - [0x143850, asm, tmhc/zonescript]
+      - [0x144c68, asm, sdk/libgcc2]
 
       - [0x299c10, databin] # .vutext
       - [0x2a6d00, databin] # .data
