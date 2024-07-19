@@ -29,7 +29,11 @@ rom: $(TARGET)
 # Compile .cpp files
 $(BUILD_DIR)/%.cpp.o: %.cpp
 	@mkdir -p $$(dirname $@)
-	$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $<
+	ifeq ($(OS), Windows_NT)
+		$(CC) $(CXXFLAGS) -v -c -o $@ $<
+	else
+		$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $<
+	endif
 
 # Compile .s files
 $(BUILD_DIR)/%.s.o: %.s
