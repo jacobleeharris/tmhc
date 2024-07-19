@@ -12,6 +12,7 @@ TM.ELF SHA-1 Hash: `59695de214d38d1c0af9167412271fe2a446a13a`
 4. Create virtual Python environment using `venv` with command: `python -m venv .venv`
 5. Activate virtual Python environment with command: `source .venv/Scripts/activate`
 6. Install dependencies using command: `pip install -U -r requirements.txt`
+7. Split the binary using Splat: `make splat`
 
 # Contributing
 Contributions are welcome and are encouraged! If you would like to help out, please create a pull request containing your changes to the repository.

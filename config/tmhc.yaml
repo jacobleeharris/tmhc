@@ -303,7 +303,7 @@ segments:
       - [0xf75d0, asm, tmhc/soundmgr] # SoundMgr.cpp
       - [0xf9470, asm, tmhc/soundptool] # soundptool.cpp
       - [0xfa790, asm, tmhc/spectrespecialweap]
-      - [0xfae18, asm, tmhc/strings] # Strings.cpp... some weird code here
+      - [0xfae18, cpp, tmhc/Strings] # Strings.cpp... some weird code here
       - [0xfae80, asm, tmhc/musictrack]
       - [0xfb4b0, asm, tmhc/strmsound] # strmSound.cpp
       - [0xfbd00, asm, tmhc/sweettoothspecialweap]
