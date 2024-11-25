@@ -28,7 +28,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /asylumb | BDD
 /airport | BDD
 /aicars | BDD
-/snd | [BNK](#bnk-format) | ? | N/A | N/A | N/A | Possibly Farbrausch V2 Synthesizer Module (.V2M)?
+/snd | [BNK](#bnk-format) | ? | N/A | N/A | N/A | Twisted Metal sound bank files
 /snd | [XFX](#xfx-format) | ? | 58 46 44 58 | N/A | "XFDX" | Possibly XFX Reverb format?
 /skat | CTL | Y | 53 43 54 4C | N/A | "SCTL" |
 /skat | SKX | Y | 53 4B 45 58 | N/A | "SKEX" |
@@ -54,9 +54,10 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 # BDD format
 
 # BNK format
-This format appears unrelated to BINK file format. However, Detect-It-Easy detects these files as "Farbrausch V2 Synthesizer Module" (V2M). A V2M player is incapable of playing these files back.
+BNK files are sound bank files which have compressed MIDI / sound fonts packaged inside.
 
-Possibly BINK-encoded audio contained within V2M?
+[QuickBMS](https://aluigi.altervista.org/quickbms.htm) with the following script: [twisted_metal_bnk.bms](https://aluigi.altervista.org/bms/twisted_metal_bnk.bms)
+can be used to extract files from them. Usually, in the SBL and DAT file format.
 
 # XFX format
 
