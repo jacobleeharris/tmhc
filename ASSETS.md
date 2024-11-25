@@ -30,6 +30,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /aicars | BDD
 /snd | [BNK](#bnk-format) | ? | N/A | N/A | N/A | Twisted Metal sound bank files
 /snd | [XFX](#xfx-format) | ? | 58 46 44 58 | N/A | "XFDX" | Possibly XFX Reverb format?
+/snd | [PCM](#pcm-format) | ? | unique | | N/A | Unrelated to regular PCM
 /skat | CTL | Y | 53 43 54 4C | N/A | "SCTL" |
 /skat | SKX | Y | 53 4B 45 58 | N/A | "SKEX" |
 /rst | [RST](#rstmdr-format) | Y | A5 92 96 4E | N/A | "...N" | Unrelated to reStructured Text format, has same header as MDR format and file without extension
@@ -61,6 +62,9 @@ BNK files are sound bank files which have compressed MIDI / sound fonts packaged
 can be used to extract files from them. Usually, in the SBL and DAT file format.
 
 # XFX format
+
+# PCM format
+This does not appear to be PCM / ADPCM. PSound, vgmstream, nor ffmpeg will play this file. Code insights show this as possibly Nellymoser PCM which ffmpeg should support.
 
 # RST/MDR format
 
