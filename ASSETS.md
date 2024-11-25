@@ -50,6 +50,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /estate | N/A | N/A | N/A | N/A | N/A | Empty folder (unfinished level?)
 
 # VPK format
+VPK files are actually VAG files which contain ADPCM audio data. PSound / [vgmstream](https://github.com/vgmstream/vgmstream) can be used to play back, extract, and modify data in these files.
 
 # BDD format
 
