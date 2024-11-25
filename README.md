@@ -5,6 +5,8 @@ Note: This repository assumes a POSIX environment. Please use WSL or Docker on a
 
 TM.ELF SHA-1 Hash: `59695de214d38d1c0af9167412271fe2a446a13a`
 
+A list of asset types and their descriptions can be found in [ASSETS.md](ASSETS.md).
+
 # Setup
 1. Extract TM.ELF from "TMHC_Later_Working.iso" (2005-08-11)
 2. Rename to TMHC.ELF
