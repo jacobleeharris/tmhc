@@ -18,7 +18,7 @@ options:
   src_path: src
   build_path: build
   section_order: [".text", ".data", ".rodata", ".bss"]
-  auto_all_sections: [".data", ".rodata", ".bss"]
+  auto_link_sections: [".data", ".rodata", ".bss"]
   disasm_unknown: True
   named_regs_for_c_funcs: False
 segments:
@@ -303,7 +303,7 @@ segments:
       - [0xf75d0, asm, tmhc/soundmgr] # SoundMgr.cpp
       - [0xf9470, asm, tmhc/soundptool] # soundptool.cpp
       - [0xfa790, asm, tmhc/spectrespecialweap]
-      - [0xfae18, cpp, tmhc/Strings] # Strings.cpp... some weird code here
+      - [0xfae18, asm, tmhc/Strings] # Strings.cpp... some weird code here
       - [0xfae80, asm, tmhc/musictrack]
       - [0xfb4b0, asm, tmhc/strmsound] # strmSound.cpp
       - [0xfbd00, asm, tmhc/sweettoothspecialweap]
@@ -371,6 +371,81 @@ segments:
       - [0x143428, asm, tmhc/zoneloader] # ZoneLoader.cpp
       - [0x143850, asm, tmhc/zonescript]
       - [0x144c68, asm, sdk/libgcc2]
+      - [0x14adb0, asm, tmhc/snd] # More likely sound.cpp than the other candidate
+      - [0x14f370, asm, tmhc/motionbluraa]
+      - [0x14f988, asm, tmhc/animblend]
+      - [0x1542d0, asm, tmhc/animinstance]
+      - [0x155078, asm, tmhc/animpappy]
+      - [0x155790, asm, tmhc/widgetanimtext]
+      - [0x155ca8, asm, tmhc/widgetanimcursorswitch]
+      - [0x156098, asm, tmhc/widgetanimbackground]
+      - [0x156290, asm, tmhc/animtweaks]
+      - [0x156c48, asm, tmhc/archive]
+      - [0x1571d8, asm, tmhc/asynchloader]
+      - [0x157660, asm, tmhc/audio] # Audio.cpp?
+      - [0x159a10, asm, tmhc/mathf] # mathf.cpp? Two math functions here
+      - [0x159b58, asm, tmhc/soundmgr] # SoundMgr.cpp?
+      - [0x15b008, asm, tmhc/color] # Color.cpp?
+      - [0x15b338, asm, tmhc/xfadesystem] # crossfader.cpp
+      - [0x15e6c0, asm, tmhc/cspool] # CsPool.cpp
+      - [0x15f048, asm, tmhc/dbs] # dbs.cpp
+      - [0x161330, asm, tmhc/debugdraw] # texDraw.cpp?
+      - [0x161fc8, asm, tmhc/devlinknamedpipe] # TMSlink.cpp?
+      - [0x1623c0, asm, tmhc/particletype] # particle.cpp?
+      - [0x163f08, asm, tmhc/filemgr] # FileMgr.cpp, printNothing func is included here
+      - [0x165258, asm, tmhc/fog]
+      - [0x165aa8, asm, tmhc/fogdyn]
+      - [0x165f90, asm, tmhc/font] # font.cpp
+      - [0x168478, asm, tmhc/gamepad] # gamepad.cpp, includes GameCodes
+      - [0x169980, asm, tmhc/gspkt]
+      - [0x16a990, asm, tmhc/playanimmenu]
+      - [0x16b030, asm, tmhc/genericpappy] # GenericPappy.cpp
+      - [0x16b4b8, asm, tmhc/hd] # hd.cpp
+      - [0x16c4c0, asm, tmhc/hdRender] # hdRender.cpp
+      - [0x1715c8, asm, tmhc/hdTraverse] # hdTraverse.cpp?
+      - [0x172d58, asm, tmhc/hierc] # hierc.cpp, probably multiple classes here
+      - [0x1784b0, asm, tmhc/incognitoentertainmentgs]
+      - [0x179078, asm, tmhc/IMediusChannels] # IMediusChannels.cpp
+      - [0x17a4d8, asm, tmhc/IMediusClans] # IMediusClans.cpp
+      - [0x17c9b0, asm, tmhc/IMediusFileSystem] # IMediusFileSystem.cpp
+      - [0x17ebb8, asm, tmhc/IMediusGames] # IMediusGames.cpp
+      - [0x180838, asm, tmhc/IMediusSetup] # IMediusSetup.cpp
+      - [0x181868, asm, tmhc/kbm] # kbm.cpp?
+      - [0x183908, asm, tmhc/keyboardwidget]
+      - [0x185518, asm, tmhc/convertchar] # TODO: Rename this
+      - [0x185660, asm, tmhc/volume] # This too
+      - [0x185dd0, asm, tmhc/listinfowidget]
+      - [0x1866c0, asm, tmhc/mathf] # mathf.cpp
+      - [0x189450, asm, tmhc/vu0] # TODO: Rename this
+      - [0x189688, asm, tmhc/memorystack] # memorystack.cpp
+      - [0x189e90, asm, tmhc/mcstate]
+      - [0x189fc0, asm, tmhc/mcfileinfo]
+      - [0x18a1e0, asm, tmhc/mctaskqueue]
+      - [0x18a3a8, asm, tmhc/mctask]
+      - [0x18a3e0, asm, tmhc/mcopenbasicfiles]
+      - [0x18a8e0, asm, tmhc/mcclosebasicfiles]
+      - [0x18aca8, asm, tmhc/mcwritebasicfiledata]
+      - [0x18b1e8, asm, tmhc/mcloadfile]
+      - [0x18b758, asm, tmhc/mcsavefile]
+      - [0x18bd20, asm, tmhc/mclistrootdirectory]
+      - [0x18c348, asm, tmhc/mccheckforpartialdirectory]
+      - [0x18cc58, asm, tmhc/mcdoesfileexist]
+      - [0x18cfc0, asm, tmhc/mcupdatestate]
+      - [0x18d388, asm, tmhc/mcformat]
+      - [0x18d638, asm, tmhc/mcscrambleicon]
+      - [0x18e390, asm, tmhc/mcsetupgamedir]
+      - [0x18eec0, asm, tmhc/medius] # medius.cpp
+      - [0x1912a8, asm, tmhc/MemcardGraph] # MemcardGraph.cpp
+      - [0x1919e8, asm, tmhc/MemcardMenu] # MemcardMenu.cpp
+      - [0x191c28, asm, tmhc/MenuMgr] # MenuMgr.cpp
+      - [0x192a98, asm, tmhc/miscPack] # miscPack.cpp
+      - [0x193f60, asm, tmhc/MovieManager] # MovieManager.cpp
+      - [0x194c80, asm, tmhc/movieFunctions] # TODO: Rename this
+      - [0x195ad8, asm, tmhc/navmesh]
+      - [0x1970f8, asm, tmhc/netmgcl] # netmgcl.cpp
+      - [0x1991e8, asm, tmhc/network] # network.cpp
+      - [0x19eb20, asm, tmhc/gif] # TODO: Rename this
+
 
       - [0x299c10, databin] # .vutext
       - [0x2a6d00, databin] # .data

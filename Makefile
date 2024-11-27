@@ -43,7 +43,7 @@ $(BUILD_DIR)/%.s.o: %.s
 # Link .o files into resulting executable
 $(TARGET): $(S_OBJ_FILES) $(CPP_OBJ_FILES)
 	@mkdir -p $$(dirname $@)
-	$(LD) -T TMHC.ld -T config/undefined_funcs_auto.txt -T config/undefined_syms_auto.txt -o $@
+	$(LD) -Map config/tmhc.map -T TMHC.ld -T config/undefined_funcs_auto.txt -T config/undefined_syms_auto.txt -o $@
 
 clean:
 	@rm -rf $(BUILD_DIR)

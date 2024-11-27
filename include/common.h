@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef _TMHC_COMMON
 #define _TMHC_COMMON
 
@@ -36,5 +37,9 @@ struct _hierhead {
 
 // Temporary types
 typedef float undefined4;
+
+int iePrint(const char *__restrict __fmt, __gnuc_va_list __arg) {
+    return vprintf(__fmt, __arg);
+}
 
 #endif
