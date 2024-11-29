@@ -17587,3 +17587,11 @@ mathfVectorCrossRight__FP8_fvectorT0 = 0x2285be0; // type:func size:0x6c visibil
 mathfVectorCrossUp__FP8_fvectorT0 = 0x2285b70; // type:func size:0x6c visibility:global
 mathfVectorMinMaxGetMac__FP8_fvectorT0 = 0x22882a8; // type:func size:0x10 visibility:global
 mathfViewScreenMatrix__FPA3_fN20ffffffffffff = 0x22865c8; // type:func size:0x1c8 visibility:global
+
+__10McFileInfo = 0x2288fc0; // type:func size:0x1c visibility:global
+__as__10McFileInfoR10McFileInfo = 0x2288fe0; // type:func size:0xbc visibility:global
+addFile__10McFileInfoPcPvUib = 0x2289130; // type:func size:0x94 visibility:global
+setDirectory__10McFileInfoPc = 0x22890a0; // type:func size:0x8c visibility:global
+setFileTitle__10McFileInfoPc = 0x22891d8; // type:func size:0x8 visibility:global
+setIconName__10McFileInfoPc = 0x22891d0; // type:func size:0x8 visibility:global
+setScreenName__10McFileInfoPc = 0x22891c8; // type:func size:0x8 visibility:global

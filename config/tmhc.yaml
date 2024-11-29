@@ -414,11 +414,11 @@ segments:
       - [0x185518, asm, tmhc/convertchar] # TODO: Rename this
       - [0x185660, asm, tmhc/volume] # This too
       - [0x185dd0, asm, tmhc/listinfowidget]
-      - [0x1866c0, cpp, tmhc/mathf] # mathf.cpp
+      - [0x1866c0, asm, tmhc/mathf] # mathf.cpp
       - [0x189450, asm, tmhc/vu0] # TODO: Rename this
       - [0x189688, asm, tmhc/memorystack] # memorystack.cpp
       - [0x189e90, asm, tmhc/mcstate]
-      - [0x189fc0, asm, tmhc/mcfileinfo]
+      - [0x189fc0, cpp, tmhc/McFileInfo]
       - [0x18a1e0, asm, tmhc/mctaskqueue]
       - [0x18a3a8, asm, tmhc/mctask]
       - [0x18a3e0, asm, tmhc/mcopenbasicfiles]

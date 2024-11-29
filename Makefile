@@ -29,7 +29,7 @@ rom: $(TARGET)
 # Compile .cpp files
 $(BUILD_DIR)/%.cpp.o: %.cpp
 	@mkdir -p $$(dirname $@)
-	$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $< && mipsel-linux-gnu-strip $@
+	$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $< && mipsel-linux-gnu-strip $@ -N dummy_symbol_name
 
 # Compile .s files
 $(BUILD_DIR)/%.s.o: %.s
