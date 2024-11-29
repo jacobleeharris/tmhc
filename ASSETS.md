@@ -54,7 +54,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 VPK files are actually VAG files which contain ADPCM audio data. PSound / [vgmstream](https://github.com/vgmstream/vgmstream) can be used to play back, extract, and modify data in these files.
 
 # BDD format
-BDD files are used for everything from models, chunks, 
+BDD files are used for everything from models, chunks,
 
 # BNK format
 BNK files are sound bank files which have compressed MIDI / sound fonts packaged inside.

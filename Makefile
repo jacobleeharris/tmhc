@@ -11,7 +11,7 @@ LD := mipsel-linux-gnu-ld
 OBJCOPY	:= mipsel-linux-gnu-objcopy
 
 ASFLAGS	:= -march=r5900 -mabi=eabi -no-pad-sections -I$(INCLUDE_DIR)
-CXXFLAGS := -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8 -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/tmhc -I$(INCLUDE_DIR)/sdk
+CXXFLAGS := -nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8 -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/tmhc -I$(INCLUDE_DIR)/sdk
 
 # Other
 WIBO := tools/wibo-0.6.14/wibo
@@ -29,11 +29,7 @@ rom: $(TARGET)
 # Compile .cpp files
 $(BUILD_DIR)/%.cpp.o: %.cpp
 	@mkdir -p $$(dirname $@)
-	ifeq ($(OS), Windows_NT)
-		$(CC) $(CXXFLAGS) -v -c -o $@ $<
-	else
-		$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $<
-	endif
+	$(WIBO) $(CC) $(CXXFLAGS) -v -c -o $@ $< && mipsel-linux-gnu-strip $@
 
 # Compile .s files
 $(BUILD_DIR)/%.s.o: %.s

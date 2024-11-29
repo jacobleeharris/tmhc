@@ -383,8 +383,7 @@ segments:
       - [0x156c48, asm, tmhc/archive]
       - [0x1571d8, asm, tmhc/asynchloader]
       - [0x157660, asm, tmhc/audio] # Audio.cpp?
-      - [0x159a10, asm, tmhc/mathf] # mathf.cpp? Two math functions here
-      - [0x159b58, asm, tmhc/soundmgr] # SoundMgr.cpp?
+      #   - [0x159a10, asm, tmhc/soundmgr] # SoundMgr.cpp?
       - [0x15b008, asm, tmhc/color] # Color.cpp?
       - [0x15b338, asm, tmhc/xfadesystem] # crossfader.cpp
       - [0x15e6c0, asm, tmhc/cspool] # CsPool.cpp
@@ -415,7 +414,7 @@ segments:
       - [0x185518, asm, tmhc/convertchar] # TODO: Rename this
       - [0x185660, asm, tmhc/volume] # This too
       - [0x185dd0, asm, tmhc/listinfowidget]
-      - [0x1866c0, asm, tmhc/mathf] # mathf.cpp
+      - [0x1866c0, cpp, tmhc/mathf] # mathf.cpp
       - [0x189450, asm, tmhc/vu0] # TODO: Rename this
       - [0x189688, asm, tmhc/memorystack] # memorystack.cpp
       - [0x189e90, asm, tmhc/mcstate]
@@ -443,9 +442,52 @@ segments:
       - [0x194c80, asm, tmhc/movieFunctions] # TODO: Rename this
       - [0x195ad8, asm, tmhc/navmesh]
       - [0x1970f8, asm, tmhc/netmgcl] # netmgcl.cpp
-      - [0x1991e8, asm, tmhc/network] # network.cpp
-      - [0x19eb20, asm, tmhc/gif] # TODO: Rename this
-
+      - [0x1991e8, asm, tmhc/network] # network.cpp?
+      - [0x19eb20, asm, tmhc/gif] # TODO: Rename this. particle?
+      - [0x1aeb50, asm, tmhc/persist] # persist.cpp
+      - [0x1af3c0, asm, tmhc/vupkt] # TODO: Rename this. packets?
+      - [0x1b06d8, asm, tmhc/pointlight]
+      - [0x1b29b0, asm, tmhc/pointmass] # pointmass.cpp
+      - [0x1b2b70, asm, tmhc/spring]
+      - [0x1b2cd0, asm, tmhc/PointToolKit] # PointToolKit.cpp
+      - [0x1b4730, asm, tmhc/Primpkt] # primpkt.cpp
+      - [0x1b7748, asm, tmhc/resetcom] # resetcom.cpp
+      - [0x1b8380, asm, tmhc/rigidbody] # rigidbody.cpp
+      - [0x1baec0, asm, tmhc/savemenu] # SaveMenu.cpp
+      - [0x1bb478, asm, tmhc/savefademenu]
+      - [0x1bb5c0, asm, tmhc/shiftjis]
+      - [0x1bb948, asm, tmhc/SKATgame] # SKATgame.cpp
+      - [0x1bff68, asm, tmhc/Slink] # TMSlink.cpp?
+      - [0x1c1bd0, asm, tmhc/snd2] # Another bunch of sound functions
+      - [0x1caf28, asm, tmhc/stats] # stats.cpp
+      - [0x1cc360, asm, tmhc/TaskManager] # TaskManager.cpp
+      - [0x1cce18, asm, tmhc/TextureManager] # TextureManager.cpp
+      - [0x1d6b00, asm, tmhc/timer]
+      - [0x1d73b0, asm, tmhc/tweaks]
+      - [0x1d91f8, asm, tmhc/blitmaster]
+      - [0x1dc4d8, asm, tmhc/Widget] # Widget.cpp
+      - [0x1e7160, asm, tmhc/WidgetContext] # WidgetContext.cpp
+      - [0x1e76b8, asm, tmhc/WidgetMenu] # WidgetMenu.cpp
+      - [0x1e7cf0, asm, tmhc/menusound]
+      - [0x1e7d30, asm, tmhc/world] # GameWorld.cpp
+      - [0x1e80b8, asm, tmhc/xfadedevlink]
+      # - [0x1e9540, asm, tmhc/animblend]
+      - [0x1e9b08, asm, tmhc/audioDec] # Audio.cpp?
+      - [0x1ea218, asm, tmhc/CsColor] # CsColor.cpp
+      - [0x1ea870, asm, tmhc/ColGridCsListNode] # ColGridCsListNode.cpp
+      - [0x1eaa10, asm, tmhc/DevLink]
+      - [0x1ec1e8, asm, tmhc/GenRand]
+      - [0x1ec510, asm, tmhc/mediusBuddyHandler]
+      - [0x1ecce0, asm, tmhc/network2] # network.cpp?
+      - [0x1ed558, asm, tmhc/SaveGraph.cpp] # SaveGraph.cpp
+      - [0x1ede00, asm, tmhc/sceFunctions]
+      - [0x1fa9d8, asm, tmhc/eznet]
+      - [0x1fbeb0, asm, tmhc/nellypcm]
+      - [0x20b610, asm, tmhc/inet]
+      # - [0x218c40, asm, tmhc/rt] # rt.cpp
+      # - [0x21f798, asm, tmhc/medius2] # packets.cpp?
+      # - [0x2330f0, asm, tmhc/mgcl2]
+      # - [0x25bd70, asm, tmhc/sce2]
 
       - [0x299c10, databin] # .vutext
       - [0x2a6d00, databin] # .data
