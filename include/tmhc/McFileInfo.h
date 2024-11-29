@@ -9,6 +9,8 @@ public:
     void setIconName(char* iconName);
     void setFileTitle(char* titleName);
 private:
+    u8 padding[0x303];
+    
     s8 field_0x300;
 
     // Directory
