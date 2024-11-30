@@ -1,5 +1,5 @@
-#ifndef _TMHC_COMMON
-#define _TMHC_COMMON
+#ifndef _TMHC_COMMON_TYPES_H
+#define _TMHC_COMMON_TYPES_H
 
 // Common types
 struct _fvector {

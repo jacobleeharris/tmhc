@@ -3,6 +3,7 @@
 
 #include "include_asm.h"
 #include "common_types.h"
+#include "common_funcs.h"
 
 typedef char s8;
 typedef short s16;
