@@ -1,4 +1,4 @@
-#include <tmhc_common.h>
+#include <common.h>
 
 // Multiply operations
 _fvector mathfMulVec(float a[3], _fvector b, _fvector c);
