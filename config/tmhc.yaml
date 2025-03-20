@@ -226,7 +226,7 @@ segments:
       - [0xa9c20, asm, tmhc/hud] # hud.cpp
       - [0xa9fc8, asm, tmhc/ingamemenu]
       - [0xaa150, asm, tmhc/ingamerootmenu]
-      - [0xaa3b8, asm, tmhc/widget]
+      - [0xaa3b8, asm, tmhc/widget2]
       - [0xab330, asm, tmhc/interactive] # Interactive.cpp
       - [0xac138, asm, tmhc/level]
       - [0xac298, asm, tmhc/destructiblesoundmanager]
@@ -418,7 +418,7 @@ segments:
       - [0x189450, asm, tmhc/vu0] # TODO: Rename this
       - [0x189688, asm, tmhc/memorystack] # memorystack.cpp
       - [0x189e90, asm, tmhc/mcstate]
-      - [0x189fc0, asm, tmhc/McFileInfo]
+      - [0x189fc0, cpp, tmhc/McFileInfo]
       - [0x18a1e0, asm, tmhc/mctaskqueue]
       - [0x18a3a8, asm, tmhc/mctask]
       - [0x18a3e0, asm, tmhc/mcopenbasicfiles]
@@ -456,7 +456,7 @@ segments:
       - [0x1baec0, asm, tmhc/savemenu] # SaveMenu.cpp
       - [0x1bb478, asm, tmhc/savefademenu]
       - [0x1bb5c0, asm, tmhc/shiftjis]
-      - [0x1bb948, asm, tmhc/SKATgame] # SKATgame.cpp
+      - [0x1bb948, asm, tmhc/SKATgame2] # SKATgame.cpp
       - [0x1bff68, asm, tmhc/Slink] # TMSlink.cpp?
       - [0x1c1bd0, asm, tmhc/snd2] # Another bunch of sound functions
       - [0x1caf28, asm, tmhc/stats] # stats.cpp
