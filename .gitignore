@@ -13,3 +13,8 @@ undefined_funcs_auto.txt
 nonmatchings/
 *.ld
 __pycache__
+.DS_Store
+*.ninja
+.splache
+compile_commands.json
+.ninja_log

@@ -6,3 +6,4 @@ watchdog
 levenshtein
 cxxfilt
 pre-commit
+ninja_syntax

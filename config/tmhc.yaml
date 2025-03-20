@@ -2,7 +2,7 @@ name: "Twisted Metal: Harbor City"
 sha1: 59695de214d38d1c0af9167412271fe2a446a13a
 options:
   basename: TMHC
-  target_path: config/TMHC.ELF
+  target_path: config/tmhc.ELF
   base_path: ../
   compiler: EEGCC
   find_file_boundaries: False
@@ -13,7 +13,7 @@ options:
   undefined_syms_auto_path: config/undefined_syms_auto.txt
   symbol_addrs_path: config/symbol_addrs.txt
   nonmatchings_path: nonmatchings
-  ld_script_path: TMHC.ld
+  ld_script_path: config/tmhc.ld
   asm_path: asm
   src_path: src
   build_path: build
@@ -418,7 +418,7 @@ segments:
       - [0x189450, asm, tmhc/vu0] # TODO: Rename this
       - [0x189688, asm, tmhc/memorystack] # memorystack.cpp
       - [0x189e90, asm, tmhc/mcstate]
-      - [0x189fc0, cpp, tmhc/McFileInfo]
+      - [0x189fc0, asm, tmhc/McFileInfo]
       - [0x18a1e0, asm, tmhc/mctaskqueue]
       - [0x18a3a8, asm, tmhc/mctask]
       - [0x18a3e0, asm, tmhc/mcopenbasicfiles]

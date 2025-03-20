@@ -603,6 +603,7 @@ def get_objdump_executable(objdump_executable: Optional[str]) -> str:
         "sh-elf-objdump",
         "sh4-linux-gnu-objdump",
         "m68k-elf-objdump",
+        "mipsel-linux-gnu-objdump"
     ]
     for objdump_cand in objdump_candidates:
         try:

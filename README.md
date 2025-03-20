@@ -14,7 +14,8 @@ A list of asset types and their descriptions can be found in [ASSETS.md](ASSETS.
 4. Create virtual Python environment using `venv` with command: `python -m venv .venv`
 5. Activate virtual Python environment with command: `source .venv/Scripts/activate`
 6. Install dependencies using command: `pip install -U -r requirements.txt`
-7. Split the binary using Splat: `make splat`
+7. Split the binary using Splat: `./configure.py -c`
+8. Run a build with `ninja`
 
 # Contributing
 Contributions are welcome and are encouraged! If you would like to help out, please create a pull request containing your changes to the repository.
