@@ -7,3 +7,4 @@ levenshtein
 cxxfilt
 pre-commit
 ninja_syntax
+mapfile_parser

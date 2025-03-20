@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     if args.clean:
         clean()
-    
+
     if args.cleansrc:
         shutil.rmtree("src", ignore_errors=True)
 

@@ -8,7 +8,15 @@ repos:
       - id: trailing-whitespace
         exclude: ^include/sdk/
       - id: end-of-file-fixer
-        exclude: ^include/sdk/
+        exclude: ^(progress/|include/sdk/)
       - id: check-yaml
       - id: check-added-large-files
       - id: mixed-line-ending
+  - repo: local
+    hooks:
+      - id: report-progress
+        name: Report progress
+        entry: python3 tools/report_progress.py
+        language: system
+        pass_filenames: false
+        types: [ python ]

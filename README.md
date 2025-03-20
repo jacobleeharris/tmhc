@@ -1,4 +1,6 @@
 # Twisted Metal: Harbor City
+![progress](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/jacobleeharris/tmhc/main/progress/total_progress.json)
+
 This repository contains a work-in-progress matching decompilation of the unreleased PlayStation 2 game "Twisted Metal: Harbor City".
 
 Note: This repository assumes a POSIX environment. Please use WSL or Docker on a Windows machine.

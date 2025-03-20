@@ -10,7 +10,7 @@ public:
     void setFileTitle(char* titleName);
 private:
     u8 padding[0x300];
-    
+
     s8 field_0x300;
 
     // Directory
