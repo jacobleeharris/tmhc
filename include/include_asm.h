@@ -10,7 +10,7 @@
         "   .set noreorder\n"                               \
         "   .globl\t" #NAME ".NON_MATCHING\n"               \
         "   .ent\t" #NAME "\n" #NAME ".NON_MATCHING:\n"     \
-        "   .include \"" FOLDER "/" #NAME ".s\"\n"          \
+        "   .include \"../" FOLDER "/" #NAME ".s\"\n"          \
         "   .set reorder\n"                                 \
         "   .set at\n"                                      \
         "   .end\t" #NAME                                   \
@@ -24,7 +24,7 @@
         ".section .text"                                    \
     )
 #endif
-__asm__(".include \"include/macro.inc\"\n");
+__asm__(".include \"../include/macro.inc\"\n");
 #else
 #ifndef INCLUDE_ASM
 #define INCLUDE_ASM(FOLDER, NAME)

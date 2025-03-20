@@ -13,3 +13,4 @@ undefined_funcs_auto.txt
 nonmatchings/
 *.ld
 __pycache__
+.DS_STORE

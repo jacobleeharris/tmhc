@@ -9,12 +9,13 @@ A list of asset types and their descriptions can be found in [ASSETS.md](ASSETS.
 
 # Setup
 1. Extract TM.ELF from "TMHC_Later_Working.iso" (2005-08-11)
-2. Rename to TMHC.ELF
+2. Rename to tmhc.elf
 3. Place in config folder
 4. Create virtual Python environment using `venv` with command: `python -m venv .venv`
 5. Activate virtual Python environment with command: `source .venv/Scripts/activate`
 6. Install dependencies using command: `pip install -U -r requirements.txt`
-7. Split the binary using Splat: `make splat`
+7. Generate project files: `cmake -B build .`
+8. Run `splat` target in `build` folder (ex: `make splat`)
 
 # Contributing
 Contributions are welcome and are encouraged! If you would like to help out, please create a pull request containing your changes to the repository.
