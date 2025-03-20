@@ -2,6 +2,7 @@
 
 class McFileInfo {
 public:
+    McFileInfo();
     bool operator==(const McFileInfo& other) const;
     void setDirectory(char* directory);
     void addFile(char* file, void* param_2, u32 param_3, bool param_4);
