@@ -1,0 +1,9 @@
+categories: []
+
+expected_paths:
+  asm: expected/build/asm
+  src: expected/build/src
+
+ignored_files: []
+
+output: ./objdiff.json

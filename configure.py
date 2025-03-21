@@ -7,6 +7,7 @@ import os
 import shutil
 import subprocess
 import sys
+import re
 
 from   pathlib     import Path
 from   typing      import Dict, List, Set, Union
@@ -173,6 +174,61 @@ def build_stuff(linker_entries: List[LinkerEntry]):
         implicit=[ELF_PATH],
     )
 
+# Pattern to workaround unintended nops around loops
+COMMENT_PART = r"\/\* (.+) ([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2}) \*\/"
+INSTRUCTION_PART = r"(\b(bne|bnel|beq|beql|bnez|bnezl|beqzl|bgez|bgezl|bgtz|bgtzl|blez|blezl|bltz|bltzl|b)\b.*)"
+OPCODE_PATTERN = re.compile(f"{COMMENT_PART}  {INSTRUCTION_PART}")
+
+PROBLEMATIC_FUNCS = set(
+    [
+        # tmhc/Slink
+        "init__5Slinki",
+        "deinit__5Slink",
+        "update__5Slink",
+        "writeFile__5SlinkPciiT1PFiiPv_vPv",
+        "readFile__5SlinkPciiT1PFiiPv_vPv",
+        "enableCommunicationFlow__5Slinkb",
+        "updateItem__5SlinkPUc",
+        "runFromDest__5Slink",
+        "getFileHandle__5Slink",
+        "sendCommand__5SlinkUcUcUi",
+        "debugPrint__5SlinkPc",
+        "__8SlinkQuei",
+        "_$_8SlinkQue",
+        "SpaceAvailable__8SlinkQue",
+        "IsEmpty__8SlinkQue",
+        "Take__8SlinkQue",
+        "SpaceUsed__8SlinkQue",
+        "Platform_WriteFlush__5Slink",
+        "Platform_Read__5SlinkPUci",
+        "Platform_Reset__5Slink",
+        "Platform_Deinit__5Slink"
+    ]
+)
+
+
+def replace_instructions_with_opcodes(asm_folder: Path) -> None:
+    nm_folder = ROOT / asm_folder / "nonmatchings"
+
+    for p in nm_folder.rglob("*.s"):
+        if p.stem not in PROBLEMATIC_FUNCS:
+            continue
+
+        with p.open("r") as file:
+            content = file.read()
+
+        if re.search(OPCODE_PATTERN, content):
+            # Reference found
+            # Embed the opcode, we have to swap byte order for correct endianness
+            content = re.sub(
+                OPCODE_PATTERN,
+                r"/* \1 \2\3\4\5 */  .word      0x\5\4\3\2 /* \6 */",
+                content,
+            )
+
+            # Write the updated content back to the file
+            with p.open("w") as file:
+                file.write(content)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Configure the project")
@@ -188,6 +244,12 @@ if __name__ == "__main__":
         help="Clean the 'src' folder",
         action="store_true",
     )
+    parser.add_argument(
+        "-noloop",
+        "--no-short-loop-workaround",
+        help="Do not replace branch instructions with raw opcodes for functions that trigger the short loop bug",
+        action="store_true",
+    )
     args = parser.parse_args()
 
     if args.clean:
@@ -201,6 +263,9 @@ if __name__ == "__main__":
     linker_entries = split.linker_writer.entries
 
     build_stuff(linker_entries)
+
+    if not args.no_short_loop_workaround:
+        replace_instructions_with_opcodes(split.config["options"]["asm_path"])
 
     if not os.path.isfile("compile_commands.json"):
         exec_shell(["ninja", "-t", "compdb"], open("compile_commands.json", "w"))

@@ -21,6 +21,7 @@ options:
   auto_link_sections: [".data", ".rodata", ".bss"]
   disasm_unknown: True
   named_regs_for_c_funcs: False
+  auto_decompile_empty_functions: False
 segments:
   - [0, databin, elf_header]
   - name: main
@@ -457,7 +458,7 @@ segments:
       - [0x1bb478, asm, tmhc/savefademenu]
       - [0x1bb5c0, asm, tmhc/shiftjis]
       - [0x1bb948, asm, tmhc/SKATgame2] # SKATgame.cpp
-      - [0x1bff68, asm, tmhc/Slink] # TMSlink.cpp?
+      - [0x1bff68, cpp, tmhc/Slink] # TMSlink.cpp?
       - [0x1c1bd0, asm, tmhc/snd2] # Another bunch of sound functions
       - [0x1caf28, asm, tmhc/stats] # stats.cpp
       - [0x1cc360, asm, tmhc/TaskManager] # TaskManager.cpp

@@ -2,6 +2,9 @@
 #define _TMHC_COMMON_TYPES_H
 
 // Common types
+typedef unsigned char uchar;
+typedef unsigned int uint;
+
 struct _fvector {
     float x;
     float y;

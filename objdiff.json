@@ -1,0 +1,3235 @@
+{
+  "custom_make": "ninja",
+  "custom_args": [],
+  "build_base": true,
+  "build_target": false,
+  "units": [
+    {
+      "name": "tmhc/uimpinternetlobbyselectionwaiting",
+      "target_path": "expected/build/asm/tmhc/uimpinternetlobbyselectionwaiting.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ingamerootmenu",
+      "target_path": "expected/build/asm/tmhc/ingamerootmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/netscore",
+      "target_path": "expected/build/asm/tmhc/netscore.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/listpager",
+      "target_path": "expected/build/asm/tmhc/listpager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpusagepolicymenu",
+      "target_path": "expected/build/asm/tmhc/uimpusagepolicymenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mrslamspecialweap",
+      "target_path": "expected/build/asm/tmhc/mrslamspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carhudsound",
+      "target_path": "expected/build/asm/tmhc/carhudsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aiglobalptool",
+      "target_path": "expected/build/asm/tmhc/aiglobalptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uicarscript",
+      "target_path": "expected/build/asm/tmhc/uicarscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainseekusingpath",
+      "target_path": "expected/build/asm/tmhc/aicharbrainseekusingpath.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddervehptool",
+      "target_path": "expected/build/asm/tmhc/foddervehptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpinternetmenu",
+      "target_path": "expected/build/asm/tmhc/uimpinternetmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimplogonstatusscreen",
+      "target_path": "expected/build/asm/tmhc/uimplogonstatusscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcupdatestate",
+      "target_path": "expected/build/asm/tmhc/mcupdatestate.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animpappy",
+      "target_path": "expected/build/asm/tmhc/animpappy.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/tierbr",
+      "target_path": "expected/build/asm/tmhc/tierbr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcformat",
+      "target_path": "expected/build/asm/tmhc/mcformat.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatewalk",
+      "target_path": "expected/build/asm/tmhc/aicharstatewalk.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/interactive",
+      "target_path": "expected/build/asm/tmhc/interactive.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateidleready",
+      "target_path": "expected/build/asm/tmhc/aicharstateidleready.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/tweaks",
+      "target_path": "expected/build/asm/tmhc/tweaks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatedive",
+      "target_path": "expected/build/asm/tmhc/aicharstatedive.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carfreezemissiles",
+      "target_path": "expected/build/asm/tmhc/carfreezemissiles.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/onlinemenus",
+      "target_path": "expected/build/asm/tmhc/onlinemenus.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carflak",
+      "target_path": "expected/build/asm/tmhc/carflak.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraintakecarhit",
+      "target_path": "expected/build/asm/tmhc/aicharbraintakecarhit.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiexitmenu",
+      "target_path": "expected/build/asm/tmhc/uiexitmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animtweaks",
+      "target_path": "expected/build/asm/tmhc/animtweaks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatejump",
+      "target_path": "expected/build/asm/tmhc/charstatejump.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/transzonescript",
+      "target_path": "expected/build/asm/tmhc/transzonescript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/axelspecialweap",
+      "target_path": "expected/build/asm/tmhc/axelspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pathsoundemittermanager",
+      "target_path": "expected/build/asm/tmhc/pathsoundemittermanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/outlawspecialweap",
+      "target_path": "expected/build/asm/tmhc/outlawspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateshieldblock",
+      "target_path": "expected/build/asm/tmhc/aicharstateshieldblock.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cartargeting",
+      "target_path": "expected/build/asm/tmhc/cartargeting.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uioverwritegamemenu",
+      "target_path": "expected/build/asm/tmhc/uioverwritegamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/vupkt",
+      "target_path": "expected/build/asm/tmhc/vupkt.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayergamemode",
+      "target_path": "expected/build/asm/tmhc/oneplayergamemode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/chunkmap",
+      "target_path": "expected/build/asm/tmhc/chunkmap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aipathfinder",
+      "target_path": "expected/build/asm/tmhc/aipathfinder.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/kbm",
+      "target_path": "expected/build/asm/tmhc/kbm.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uidnas_eula",
+      "target_path": "expected/build/asm/tmhc/uidnas_eula.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/dynodebris",
+      "target_path": "expected/build/asm/tmhc/dynodebris.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/heliptool",
+      "target_path": "expected/build/asm/tmhc/heliptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uisplashmenu",
+      "target_path": "expected/build/asm/tmhc/uisplashmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharengagecattleprod",
+      "target_path": "expected/build/asm/tmhc/aicharengagecattleprod.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatestandaim",
+      "target_path": "expected/build/asm/tmhc/aicharstatestandaim.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carweapanimsound",
+      "target_path": "expected/build/asm/tmhc/carweapanimsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/burningmen",
+      "target_path": "expected/build/asm/tmhc/burningmen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateblock",
+      "target_path": "expected/build/asm/tmhc/charstateblock.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/breadcrumbs",
+      "target_path": "expected/build/asm/tmhc/breadcrumbs.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/IMediusClans",
+      "target_path": "expected/build/asm/tmhc/IMediusClans.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/netstats",
+      "target_path": "expected/build/asm/tmhc/netstats.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainidle",
+      "target_path": "expected/build/asm/tmhc/aicharbrainidle.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionfindstveh",
+      "target_path": "expected/build/asm/tmhc/missionfindstveh.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/collector",
+      "target_path": "expected/build/asm/tmhc/collector.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/thumperspecialweap",
+      "target_path": "expected/build/asm/tmhc/thumperspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/chunkscript",
+      "target_path": "expected/build/asm/tmhc/chunkscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/keyboardwidget",
+      "target_path": "expected/build/asm/tmhc/keyboardwidget.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uisplitscreenmenu",
+      "target_path": "expected/build/asm/tmhc/uisplitscreenmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateclimb",
+      "target_path": "expected/build/asm/tmhc/charstateclimb.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstaterun",
+      "target_path": "expected/build/asm/tmhc/aicharstaterun.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcscrambleicon",
+      "target_path": "expected/build/asm/tmhc/mcscrambleicon.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/relic",
+      "target_path": "expected/build/asm/tmhc/relic.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/helicopter",
+      "target_path": "expected/build/asm/tmhc/helicopter.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animtrigger",
+      "target_path": "expected/build/asm/tmhc/animtrigger.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraindiveoutofway",
+      "target_path": "expected/build/asm/tmhc/aicharbraindiveoutofway.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/tmslink",
+      "target_path": "expected/build/asm/tmhc/tmslink.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/fodderveh",
+      "target_path": "expected/build/asm/tmhc/fodderveh.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/weap",
+      "target_path": "expected/build/asm/tmhc/weap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatemantle",
+      "target_path": "expected/build/asm/tmhc/charstatemantle.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateledgegrab",
+      "target_path": "expected/build/asm/tmhc/charstateledgegrab.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/spring",
+      "target_path": "expected/build/asm/tmhc/spring.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uinetworkinitializationstatusscreen",
+      "target_path": "expected/build/asm/tmhc/uinetworkinitializationstatusscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charcollis",
+      "target_path": "expected/build/asm/tmhc/charcollis.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatepickupmiss",
+      "target_path": "expected/build/asm/tmhc/charstatepickupmiss.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharptool",
+      "target_path": "expected/build/asm/tmhc/aicharptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/TextureManager",
+      "target_path": "expected/build/asm/tmhc/TextureManager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatepickup",
+      "target_path": "expected/build/asm/tmhc/charstatepickup.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carmissiles",
+      "target_path": "expected/build/asm/tmhc/carmissiles.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pickupptool",
+      "target_path": "expected/build/asm/tmhc/pickupptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/nettm",
+      "target_path": "expected/build/asm/tmhc/nettm.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/vu0",
+      "target_path": "expected/build/asm/tmhc/vu0.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatedeath",
+      "target_path": "expected/build/asm/tmhc/aicharstatedeath.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcsavefile",
+      "target_path": "expected/build/asm/tmhc/mcsavefile.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/semispecialweap",
+      "target_path": "expected/build/asm/tmhc/semispecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cardeadhull",
+      "target_path": "expected/build/asm/tmhc/cardeadhull.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ingamemenu",
+      "target_path": "expected/build/asm/tmhc/ingamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/zonescript",
+      "target_path": "expected/build/asm/tmhc/zonescript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/sound",
+      "target_path": "expected/build/asm/tmhc/sound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpinternetlobbyselectionmenu",
+      "target_path": "expected/build/asm/tmhc/uimpinternetlobbyselectionmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/savefademenu",
+      "target_path": "expected/build/asm/tmhc/savefademenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/preacherspecialweap",
+      "target_path": "expected/build/asm/tmhc/preacherspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiinternetlobbymenu",
+      "target_path": "expected/build/asm/tmhc/uiinternetlobbymenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animlevelobjectsound",
+      "target_path": "expected/build/asm/tmhc/animlevelobjectsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcdoesfileexist",
+      "target_path": "expected/build/asm/tmhc/mcdoesfileexist.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mclistrootdirectory",
+      "target_path": "expected/build/asm/tmhc/mclistrootdirectory.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/onlineingamemenu",
+      "target_path": "expected/build/asm/tmhc/onlineingamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missions",
+      "target_path": "expected/build/asm/tmhc/missions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/rt",
+      "target_path": "expected/build/asm/tmhc/rt.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcopenbasicfiles",
+      "target_path": "expected/build/asm/tmhc/mcopenbasicfiles.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/WidgetContext",
+      "target_path": "expected/build/asm/tmhc/WidgetContext.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/MenuMgr",
+      "target_path": "expected/build/asm/tmhc/MenuMgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharattractpts",
+      "target_path": "expected/build/asm/tmhc/aicharattractpts.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carsound",
+      "target_path": "expected/build/asm/tmhc/carsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/reset",
+      "target_path": "expected/build/asm/tmhc/reset.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/PointToolKit",
+      "target_path": "expected/build/asm/tmhc/PointToolKit.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainshoot",
+      "target_path": "expected/build/asm/tmhc/aicharbrainshoot.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/sweettoothspecialweap",
+      "target_path": "expected/build/asm/tmhc/sweettoothspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/listinfowidget",
+      "target_path": "expected/build/asm/tmhc/listinfowidget.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiwhichgamemenu",
+      "target_path": "expected/build/asm/tmhc/uiwhichgamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/IMediusSetup",
+      "target_path": "expected/build/asm/tmhc/IMediusSetup.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gameoptions",
+      "target_path": "expected/build/asm/tmhc/gameoptions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/attractscript",
+      "target_path": "expected/build/asm/tmhc/attractscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carcontrol",
+      "target_path": "expected/build/asm/tmhc/carcontrol.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/widgetanimtext",
+      "target_path": "expected/build/asm/tmhc/widgetanimtext.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/rbinteract",
+      "target_path": "expected/build/asm/tmhc/rbinteract.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateknockback",
+      "target_path": "expected/build/asm/tmhc/charstateknockback.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/flash",
+      "target_path": "expected/build/asm/tmhc/flash.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uisprebootiopscreen",
+      "target_path": "expected/build/asm/tmhc/uisprebootiopscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animblend",
+      "target_path": "expected/build/asm/tmhc/animblend.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcmenus",
+      "target_path": "expected/build/asm/tmhc/mcmenus.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/nellypcm",
+      "target_path": "expected/build/asm/tmhc/nellypcm.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrain",
+      "target_path": "expected/build/asm/tmhc/aicharbrain.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carweapset",
+      "target_path": "expected/build/asm/tmhc/carweapset.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/weaponsound",
+      "target_path": "expected/build/asm/tmhc/weaponsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/fog",
+      "target_path": "expected/build/asm/tmhc/fog.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/devlinknamedpipe",
+      "target_path": "expected/build/asm/tmhc/devlinknamedpipe.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionbase",
+      "target_path": "expected/build/asm/tmhc/missionbase.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionimpoundlot",
+      "target_path": "expected/build/asm/tmhc/missionimpoundlot.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiloadgamemenu",
+      "target_path": "expected/build/asm/tmhc/uiloadgamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charcamera",
+      "target_path": "expected/build/asm/tmhc/charcamera.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateattackbaton",
+      "target_path": "expected/build/asm/tmhc/aicharstateattackbaton.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpgamename",
+      "target_path": "expected/build/asm/tmhc/uimpgamename.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/CsColor",
+      "target_path": "expected/build/asm/tmhc/CsColor.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainwalkoutofway",
+      "target_path": "expected/build/asm/tmhc/aicharbrainwalkoutofway.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainstate",
+      "target_path": "expected/build/asm/tmhc/aicharbrainstate.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/genericpappy",
+      "target_path": "expected/build/asm/tmhc/genericpappy.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcstate",
+      "target_path": "expected/build/asm/tmhc/mcstate.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/xfadesystem",
+      "target_path": "expected/build/asm/tmhc/xfadesystem.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/avatarvolumes",
+      "target_path": "expected/build/asm/tmhc/avatarvolumes.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimponlinemenu",
+      "target_path": "expected/build/asm/tmhc/uimponlinemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/eestrmbuff",
+      "target_path": "expected/build/asm/tmhc/eestrmbuff.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/quitgamemenu",
+      "target_path": "expected/build/asm/tmhc/quitgamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gameunlocks",
+      "target_path": "expected/build/asm/tmhc/gameunlocks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missiondowntowncopbattle",
+      "target_path": "expected/build/asm/tmhc/missiondowntowncopbattle.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpannouncementsmenu",
+      "target_path": "expected/build/asm/tmhc/uimpannouncementsmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/MemcardGraph",
+      "target_path": "expected/build/asm/tmhc/MemcardGraph.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiselectnetworkconfigurationscreen",
+      "target_path": "expected/build/asm/tmhc/uiselectnetworkconfigurationscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/skatgame",
+      "target_path": "expected/build/asm/tmhc/skatgame.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/WidgetMenu",
+      "target_path": "expected/build/asm/tmhc/WidgetMenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gif",
+      "target_path": "expected/build/asm/tmhc/gif.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pausemenu",
+      "target_path": "expected/build/asm/tmhc/pausemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/MemcardMenu",
+      "target_path": "expected/build/asm/tmhc/MemcardMenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharmanager",
+      "target_path": "expected/build/asm/tmhc/aicharmanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpdnasmenu",
+      "target_path": "expected/build/asm/tmhc/uimpdnasmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharshotgunguard",
+      "target_path": "expected/build/asm/tmhc/aicharshotgunguard.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/worldloader",
+      "target_path": "expected/build/asm/tmhc/worldloader.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/widget2",
+      "target_path": "expected/build/asm/tmhc/widget2.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateshove",
+      "target_path": "expected/build/asm/tmhc/charstateshove.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/movieFunctions",
+      "target_path": "expected/build/asm/tmhc/movieFunctions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/actioncontext",
+      "target_path": "expected/build/asm/tmhc/actioncontext.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aipedptool",
+      "target_path": "expected/build/asm/tmhc/aipedptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uinetlogoutscreen",
+      "target_path": "expected/build/asm/tmhc/uinetlogoutscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pspui",
+      "target_path": "expected/build/asm/tmhc/pspui.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateidle",
+      "target_path": "expected/build/asm/tmhc/charstateidle.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/twoplayerdeathmenu",
+      "target_path": "expected/build/asm/tmhc/twoplayerdeathmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hud",
+      "target_path": "expected/build/asm/tmhc/hud.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/inet",
+      "target_path": "expected/build/asm/tmhc/inet.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/world",
+      "target_path": "expected/build/asm/tmhc/world.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/onlinegamemode",
+      "target_path": "expected/build/asm/tmhc/onlinegamemode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uienemyselectmenu",
+      "target_path": "expected/build/asm/tmhc/uienemyselectmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mctask",
+      "target_path": "expected/build/asm/tmhc/mctask.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/endurancelosemenu",
+      "target_path": "expected/build/asm/tmhc/endurancelosemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/blitmaster",
+      "target_path": "expected/build/asm/tmhc/blitmaster.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aipointnav",
+      "target_path": "expected/build/asm/tmhc/aipointnav.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatepunch",
+      "target_path": "expected/build/asm/tmhc/charstatepunch.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/shell",
+      "target_path": "expected/build/asm/tmhc/shell.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionmall",
+      "target_path": "expected/build/asm/tmhc/missionmall.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/motionbluraa",
+      "target_path": "expected/build/asm/tmhc/motionbluraa.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ghettoweap",
+      "target_path": "expected/build/asm/tmhc/ghettoweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gamechunk",
+      "target_path": "expected/build/asm/tmhc/gamechunk.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/resetcom",
+      "target_path": "expected/build/asm/tmhc/resetcom.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animlookat",
+      "target_path": "expected/build/asm/tmhc/animlookat.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uinetworkinitializationscreen",
+      "target_path": "expected/build/asm/tmhc/uinetworkinitializationscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/action",
+      "target_path": "expected/build/asm/tmhc/action.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/bulletcasing",
+      "target_path": "expected/build/asm/tmhc/bulletcasing.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/dbs",
+      "target_path": "expected/build/asm/tmhc/dbs.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charanim",
+      "target_path": "expected/build/asm/tmhc/charanim.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charreset",
+      "target_path": "expected/build/asm/tmhc/charreset.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/endurancewinmenu",
+      "target_path": "expected/build/asm/tmhc/endurancewinmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/destructiblesoundmanager",
+      "target_path": "expected/build/asm/tmhc/destructiblesoundmanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/debugdraw",
+      "target_path": "expected/build/asm/tmhc/debugdraw.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/shiftjis",
+      "target_path": "expected/build/asm/tmhc/shiftjis.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ColGridCsListNode",
+      "target_path": "expected/build/asm/tmhc/ColGridCsListNode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/widgetanimcursorswitch",
+      "target_path": "expected/build/asm/tmhc/widgetanimcursorswitch.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/IMediusChannels",
+      "target_path": "expected/build/asm/tmhc/IMediusChannels.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/soundmgr",
+      "target_path": "expected/build/asm/tmhc/soundmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatetakeshove",
+      "target_path": "expected/build/asm/tmhc/aicharstatetakeshove.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/main",
+      "target_path": "expected/build/asm/tmhc/main.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cameras",
+      "target_path": "expected/build/asm/tmhc/cameras.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/sceFunctions",
+      "target_path": "expected/build/asm/tmhc/sceFunctions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/dynpappy",
+      "target_path": "expected/build/asm/tmhc/dynpappy.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/menusound",
+      "target_path": "expected/build/asm/tmhc/menusound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/archive",
+      "target_path": "expected/build/asm/tmhc/archive.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/tilepager",
+      "target_path": "expected/build/asm/tmhc/tilepager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/positioninfo",
+      "target_path": "expected/build/asm/tmhc/positioninfo.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/miscPack",
+      "target_path": "expected/build/asm/tmhc/miscPack.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/snd2",
+      "target_path": "expected/build/asm/tmhc/snd2.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/soundemittermanager",
+      "target_path": "expected/build/asm/tmhc/soundemittermanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mathf",
+      "target_path": "expected/build/asm/tmhc/mathf.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/strmsound",
+      "target_path": "expected/build/asm/tmhc/strmsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hudanimsound",
+      "target_path": "expected/build/asm/tmhc/hudanimsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/game",
+      "target_path": "expected/build/asm/tmhc/game.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddervehmgr",
+      "target_path": "expected/build/asm/tmhc/foddervehmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharanim",
+      "target_path": "expected/build/asm/tmhc/aicharanim.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainrunoutofway",
+      "target_path": "expected/build/asm/tmhc/aicharbrainrunoutofway.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uileavegamemenu",
+      "target_path": "expected/build/asm/tmhc/uileavegamemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/playanimmenu",
+      "target_path": "expected/build/asm/tmhc/playanimmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/fogdyn",
+      "target_path": "expected/build/asm/tmhc/fogdyn.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatetakecarhit",
+      "target_path": "expected/build/asm/tmhc/aicharstatetakecarhit.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/levelobjsndmanager",
+      "target_path": "expected/build/asm/tmhc/levelobjsndmanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/volume",
+      "target_path": "expected/build/asm/tmhc/volume.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraintumble",
+      "target_path": "expected/build/asm/tmhc/aicharbraintumble.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/caranim",
+      "target_path": "expected/build/asm/tmhc/caranim.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/attractmodemgr",
+      "target_path": "expected/build/asm/tmhc/attractmodemgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/timberdebris",
+      "target_path": "expected/build/asm/tmhc/timberdebris.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatedeath",
+      "target_path": "expected/build/asm/tmhc/charstatedeath.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/autosavedisablemenu",
+      "target_path": "expected/build/asm/tmhc/autosavedisablemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/filemgr",
+      "target_path": "expected/build/asm/tmhc/filemgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/soundptool",
+      "target_path": "expected/build/asm/tmhc/soundptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uicarselectmenu",
+      "target_path": "expected/build/asm/tmhc/uicarselectmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbatonguard",
+      "target_path": "expected/build/asm/tmhc/aicharbatonguard.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ptool",
+      "target_path": "expected/build/asm/tmhc/ptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cspool",
+      "target_path": "expected/build/asm/tmhc/cspool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/rtfade",
+      "target_path": "expected/build/asm/tmhc/rtfade.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gamepersist",
+      "target_path": "expected/build/asm/tmhc/gamepersist.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/xfadedevlink",
+      "target_path": "expected/build/asm/tmhc/xfadedevlink.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hdRender",
+      "target_path": "expected/build/asm/tmhc/hdRender.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carhud",
+      "target_path": "expected/build/asm/tmhc/carhud.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/Widget",
+      "target_path": "expected/build/asm/tmhc/Widget.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carmgr",
+      "target_path": "expected/build/asm/tmhc/carmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/chartargeting",
+      "target_path": "expected/build/asm/tmhc/chartargeting.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hattrack",
+      "target_path": "expected/build/asm/tmhc/hattrack.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharcollis",
+      "target_path": "expected/build/asm/tmhc/aicharcollis.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gamemodelevelmenu",
+      "target_path": "expected/build/asm/tmhc/gamemodelevelmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionasylum",
+      "target_path": "expected/build/asm/tmhc/missionasylum.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/transitionloader",
+      "target_path": "expected/build/asm/tmhc/transitionloader.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstate",
+      "target_path": "expected/build/asm/tmhc/charstate.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charweap",
+      "target_path": "expected/build/asm/tmhc/charweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carcamera",
+      "target_path": "expected/build/asm/tmhc/carcamera.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/burningman",
+      "target_path": "expected/build/asm/tmhc/burningman.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mrgrimmspecialweap",
+      "target_path": "expected/build/asm/tmhc/mrgrimmspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/snd",
+      "target_path": "expected/build/asm/tmhc/snd.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/SaveGraph.cpp",
+      "target_path": "expected/build/asm/tmhc/SaveGraph.cpp.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainengagehandtohand",
+      "target_path": "expected/build/asm/tmhc/aicharbrainengagehandtohand.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/ui",
+      "target_path": "expected/build/asm/tmhc/ui.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayerstoryscript",
+      "target_path": "expected/build/asm/tmhc/oneplayerstoryscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mediusBuddyHandler",
+      "target_path": "expected/build/asm/tmhc/mediusBuddyHandler.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/network",
+      "target_path": "expected/build/asm/tmhc/network.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstate",
+      "target_path": "expected/build/asm/tmhc/aicharstate.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carswarmermissiles",
+      "target_path": "expected/build/asm/tmhc/carswarmermissiles.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/dockslevelsound",
+      "target_path": "expected/build/asm/tmhc/dockslevelsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carai",
+      "target_path": "expected/build/asm/tmhc/carai.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddercarptool",
+      "target_path": "expected/build/asm/tmhc/foddercarptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/destruct",
+      "target_path": "expected/build/asm/tmhc/destruct.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/scenterenvweap",
+      "target_path": "expected/build/asm/tmhc/scenterenvweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/SKATgame2",
+      "target_path": "expected/build/asm/tmhc/SKATgame2.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/particletype",
+      "target_path": "expected/build/asm/tmhc/particletype.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionscentercombat",
+      "target_path": "expected/build/asm/tmhc/missionscentercombat.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainengagebaton",
+      "target_path": "expected/build/asm/tmhc/aicharbrainengagebaton.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcsetupgamedir",
+      "target_path": "expected/build/asm/tmhc/mcsetupgamedir.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/twoplayerdeathscript",
+      "target_path": "expected/build/asm/tmhc/twoplayerdeathscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gamemodescript",
+      "target_path": "expected/build/asm/tmhc/gamemodescript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatethrow",
+      "target_path": "expected/build/asm/tmhc/aicharstatethrow.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatedodgeroll",
+      "target_path": "expected/build/asm/tmhc/charstatedodgeroll.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainalert",
+      "target_path": "expected/build/asm/tmhc/aicharbrainalert.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatealert",
+      "target_path": "expected/build/asm/tmhc/aicharstatealert.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharroundrobin",
+      "target_path": "expected/build/asm/tmhc/aicharroundrobin.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carweap",
+      "target_path": "expected/build/asm/tmhc/carweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/autosavestart",
+      "target_path": "expected/build/asm/tmhc/autosavestart.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cargascan",
+      "target_path": "expected/build/asm/tmhc/cargascan.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiwaitingroommenu",
+      "target_path": "expected/build/asm/tmhc/uiwaitingroommenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/audioDec",
+      "target_path": "expected/build/asm/tmhc/audioDec.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatetakehit",
+      "target_path": "expected/build/asm/tmhc/aicharstatetakehit.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mccheckforpartialdirectory",
+      "target_path": "expected/build/asm/tmhc/mccheckforpartialdirectory.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatetumble",
+      "target_path": "expected/build/asm/tmhc/aicharstatetumble.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/widgetanimbackground",
+      "target_path": "expected/build/asm/tmhc/widgetanimbackground.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gspkt",
+      "target_path": "expected/build/asm/tmhc/gspkt.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpplayernetsetmenu",
+      "target_path": "expected/build/asm/tmhc/uimpplayernetsetmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/spectrespecialweap",
+      "target_path": "expected/build/asm/tmhc/spectrespecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstaterun",
+      "target_path": "expected/build/asm/tmhc/charstaterun.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/char",
+      "target_path": "expected/build/asm/tmhc/char.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/flightcamera",
+      "target_path": "expected/build/asm/tmhc/flightcamera.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carenvweap",
+      "target_path": "expected/build/asm/tmhc/carenvweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatefire",
+      "target_path": "expected/build/asm/tmhc/aicharstatefire.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddercar",
+      "target_path": "expected/build/asm/tmhc/foddercar.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/player",
+      "target_path": "expected/build/asm/tmhc/player.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstatestandshoot",
+      "target_path": "expected/build/asm/tmhc/aicharstatestandshoot.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainmullaround",
+      "target_path": "expected/build/asm/tmhc/aicharbrainmullaround.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hal",
+      "target_path": "expected/build/asm/tmhc/hal.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/weaptweaks",
+      "target_path": "expected/build/asm/tmhc/weaptweaks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cardestruct",
+      "target_path": "expected/build/asm/tmhc/cardestruct.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/debris",
+      "target_path": "expected/build/asm/tmhc/debris.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/persist",
+      "target_path": "expected/build/asm/tmhc/persist.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aimgrroundrobin",
+      "target_path": "expected/build/asm/tmhc/aimgrroundrobin.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiiconanimmgr",
+      "target_path": "expected/build/asm/tmhc/uiiconanimmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aiptool",
+      "target_path": "expected/build/asm/tmhc/aiptool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraintakeshove",
+      "target_path": "expected/build/asm/tmhc/aicharbraintakeshove.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/TaskManager",
+      "target_path": "expected/build/asm/tmhc/TaskManager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pointlight",
+      "target_path": "expected/build/asm/tmhc/pointlight.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcclosebasicfiles",
+      "target_path": "expected/build/asm/tmhc/mcclosebasicfiles.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charweapset",
+      "target_path": "expected/build/asm/tmhc/charweapset.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpjoingamepasswordscreen",
+      "target_path": "expected/build/asm/tmhc/uimpjoingamepasswordscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/DevLink",
+      "target_path": "expected/build/asm/tmhc/DevLink.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddercarmgr",
+      "target_path": "expected/build/asm/tmhc/foddercarmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animsound",
+      "target_path": "expected/build/asm/tmhc/animsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uineterrormenu",
+      "target_path": "expected/build/asm/tmhc/uineterrormenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carpager",
+      "target_path": "expected/build/asm/tmhc/carpager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/scenterlevelsound",
+      "target_path": "expected/build/asm/tmhc/scenterlevelsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charpickup",
+      "target_path": "expected/build/asm/tmhc/charpickup.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/projectedrectile",
+      "target_path": "expected/build/asm/tmhc/projectedrectile.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainpatrol",
+      "target_path": "expected/build/asm/tmhc/aicharbrainpatrol.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/zoneloader",
+      "target_path": "expected/build/asm/tmhc/zoneloader.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hdTraverse",
+      "target_path": "expected/build/asm/tmhc/hdTraverse.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carmachineguns",
+      "target_path": "expected/build/asm/tmhc/carmachineguns.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayerchallengelosemenu",
+      "target_path": "expected/build/asm/tmhc/oneplayerchallengelosemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/camera",
+      "target_path": "expected/build/asm/tmhc/camera.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimpjoingamestatusscreen",
+      "target_path": "expected/build/asm/tmhc/uimpjoingamestatusscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mctaskqueue",
+      "target_path": "expected/build/asm/tmhc/mctaskqueue.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayermissionscript",
+      "target_path": "expected/build/asm/tmhc/oneplayermissionscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uicustomcontrolmenu",
+      "target_path": "expected/build/asm/tmhc/uicustomcontrolmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/netcodes",
+      "target_path": "expected/build/asm/tmhc/netcodes.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/menufactory",
+      "target_path": "expected/build/asm/tmhc/menufactory.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cardyn",
+      "target_path": "expected/build/asm/tmhc/cardyn.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uitransitions",
+      "target_path": "expected/build/asm/tmhc/uitransitions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/MovieManager",
+      "target_path": "expected/build/asm/tmhc/MovieManager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/eznet",
+      "target_path": "expected/build/asm/tmhc/eznet.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/IMediusFileSystem",
+      "target_path": "expected/build/asm/tmhc/IMediusFileSystem.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/bulletcasings",
+      "target_path": "expected/build/asm/tmhc/bulletcasings.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatethrow",
+      "target_path": "expected/build/asm/tmhc/charstatethrow.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayerchallengescript",
+      "target_path": "expected/build/asm/tmhc/oneplayerchallengescript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pointsteering",
+      "target_path": "expected/build/asm/tmhc/pointsteering.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/IMediusGames",
+      "target_path": "expected/build/asm/tmhc/IMediusGames.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/healthstand",
+      "target_path": "expected/build/asm/tmhc/healthstand.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/endurancescript",
+      "target_path": "expected/build/asm/tmhc/endurancescript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charcameratweaks",
+      "target_path": "expected/build/asm/tmhc/charcameratweaks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/artifact",
+      "target_path": "expected/build/asm/tmhc/artifact.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pathtool",
+      "target_path": "expected/build/asm/tmhc/pathtool.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiscript",
+      "target_path": "expected/build/asm/tmhc/uiscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carmode",
+      "target_path": "expected/build/asm/tmhc/carmode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/softregionsound",
+      "target_path": "expected/build/asm/tmhc/softregionsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/rigidbody",
+      "target_path": "expected/build/asm/tmhc/rigidbody.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiloadscreen",
+      "target_path": "expected/build/asm/tmhc/uiloadscreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gameworld",
+      "target_path": "expected/build/asm/tmhc/gameworld.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/GenRand",
+      "target_path": "expected/build/asm/tmhc/GenRand.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/flame",
+      "target_path": "expected/build/asm/tmhc/flame.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/netmgcl",
+      "target_path": "expected/build/asm/tmhc/netmgcl.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uisingleplayermenu",
+      "target_path": "expected/build/asm/tmhc/uisingleplayermenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pointmass",
+      "target_path": "expected/build/asm/tmhc/pointmass.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/missionchasethemole",
+      "target_path": "expected/build/asm/tmhc/missionchasethemole.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carweapsound",
+      "target_path": "expected/build/asm/tmhc/carweapsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/level",
+      "target_path": "expected/build/asm/tmhc/level.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharnav",
+      "target_path": "expected/build/asm/tmhc/aicharnav.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/Strings",
+      "target_path": "expected/build/asm/tmhc/Strings.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimainmenu",
+      "target_path": "expected/build/asm/tmhc/uimainmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/Primpkt",
+      "target_path": "expected/build/asm/tmhc/Primpkt.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aichargenericped",
+      "target_path": "expected/build/asm/tmhc/aichargenericped.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbrainengagetoshoot",
+      "target_path": "expected/build/asm/tmhc/aicharbrainengagetoshoot.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimplogonmenu",
+      "target_path": "expected/build/asm/tmhc/uimplogonmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gamepad",
+      "target_path": "expected/build/asm/tmhc/gamepad.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/timer",
+      "target_path": "expected/build/asm/tmhc/timer.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateidle",
+      "target_path": "expected/build/asm/tmhc/aicharstateidle.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pagertrigger",
+      "target_path": "expected/build/asm/tmhc/pagertrigger.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/pappytarget",
+      "target_path": "expected/build/asm/tmhc/pappytarget.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/avatar",
+      "target_path": "expected/build/asm/tmhc/avatar.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charcontrol",
+      "target_path": "expected/build/asm/tmhc/charcontrol.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aichar",
+      "target_path": "expected/build/asm/tmhc/aichar.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/stats",
+      "target_path": "expected/build/asm/tmhc/stats.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aichardyn",
+      "target_path": "expected/build/asm/tmhc/aichardyn.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charmode",
+      "target_path": "expected/build/asm/tmhc/charmode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/animinstance",
+      "target_path": "expected/build/asm/tmhc/animinstance.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/cardropmine",
+      "target_path": "expected/build/asm/tmhc/cardropmine.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/savemenu",
+      "target_path": "expected/build/asm/tmhc/savemenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/storyinfoblock",
+      "target_path": "expected/build/asm/tmhc/storyinfoblock.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/chardyn",
+      "target_path": "expected/build/asm/tmhc/chardyn.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/healthmeter",
+      "target_path": "expected/build/asm/tmhc/healthmeter.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/staminameter",
+      "target_path": "expected/build/asm/tmhc/staminameter.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/font",
+      "target_path": "expected/build/asm/tmhc/font.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstateledgewobble",
+      "target_path": "expected/build/asm/tmhc/charstateledgewobble.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimissionselectmenu",
+      "target_path": "expected/build/asm/tmhc/uimissionselectmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraintakehit",
+      "target_path": "expected/build/asm/tmhc/aicharbraintakehit.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/persistautosave",
+      "target_path": "expected/build/asm/tmhc/persistautosave.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/foddercarsound",
+      "target_path": "expected/build/asm/tmhc/foddercarsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateidlebattlestance",
+      "target_path": "expected/build/asm/tmhc/aicharstateidlebattlestance.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/gothlevelsound",
+      "target_path": "expected/build/asm/tmhc/gothlevelsound.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charmachinegun",
+      "target_path": "expected/build/asm/tmhc/charmachinegun.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charstatebatswipe",
+      "target_path": "expected/build/asm/tmhc/charstatebatswipe.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uicarpager",
+      "target_path": "expected/build/asm/tmhc/uicarpager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/weaponsbitfield",
+      "target_path": "expected/build/asm/tmhc/weaponsbitfield.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/asynchloader",
+      "target_path": "expected/build/asm/tmhc/asynchloader.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/charhud",
+      "target_path": "expected/build/asm/tmhc/charhud.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/audio",
+      "target_path": "expected/build/asm/tmhc/audio.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hierc",
+      "target_path": "expected/build/asm/tmhc/hierc.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/medius",
+      "target_path": "expected/build/asm/tmhc/medius.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharstateattackcattleprod",
+      "target_path": "expected/build/asm/tmhc/aicharstateattackcattleprod.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uimplanlogonmenu",
+      "target_path": "expected/build/asm/tmhc/uimplanlogonmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/musictrack",
+      "target_path": "expected/build/asm/tmhc/musictrack.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/soundemitter",
+      "target_path": "expected/build/asm/tmhc/soundemitter.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/softregionsoundmanager",
+      "target_path": "expected/build/asm/tmhc/softregionsoundmanager.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/soundchan",
+      "target_path": "expected/build/asm/tmhc/soundchan.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcpersist",
+      "target_path": "expected/build/asm/tmhc/mcpersist.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/roadkillspecialweap",
+      "target_path": "expected/build/asm/tmhc/roadkillspecialweap.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/car",
+      "target_path": "expected/build/asm/tmhc/car.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/oneplayerchallengewinmenu",
+      "target_path": "expected/build/asm/tmhc/oneplayerchallengewinmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/actionmgr",
+      "target_path": "expected/build/asm/tmhc/actionmgr.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/incognitoentertainmentgs",
+      "target_path": "expected/build/asm/tmhc/incognitoentertainmentgs.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carpagertask",
+      "target_path": "expected/build/asm/tmhc/carpagertask.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/netoptions",
+      "target_path": "expected/build/asm/tmhc/netoptions.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aianimaimat",
+      "target_path": "expected/build/asm/tmhc/aianimaimat.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/convertchar",
+      "target_path": "expected/build/asm/tmhc/convertchar.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carscript",
+      "target_path": "expected/build/asm/tmhc/carscript.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uiselectuniversescreen",
+      "target_path": "expected/build/asm/tmhc/uiselectuniversescreen.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharbraindead",
+      "target_path": "expected/build/asm/tmhc/aicharbraindead.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/mcloadfile",
+      "target_path": "expected/build/asm/tmhc/mcloadfile.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/navmesh",
+      "target_path": "expected/build/asm/tmhc/navmesh.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/firstautosave",
+      "target_path": "expected/build/asm/tmhc/firstautosave.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/hd",
+      "target_path": "expected/build/asm/tmhc/hd.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/aicharcattleprodguard",
+      "target_path": "expected/build/asm/tmhc/aicharcattleprodguard.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/memorystack",
+      "target_path": "expected/build/asm/tmhc/memorystack.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/chartweaks",
+      "target_path": "expected/build/asm/tmhc/chartweaks.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uioptionsmenu",
+      "target_path": "expected/build/asm/tmhc/uioptionsmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/modelcam",
+      "target_path": "expected/build/asm/tmhc/modelcam.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/uilevelselectmenu",
+      "target_path": "expected/build/asm/tmhc/uilevelselectmenu.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/network2",
+      "target_path": "expected/build/asm/tmhc/network2.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/npchar",
+      "target_path": "expected/build/asm/tmhc/npchar.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/twoplayergamemode",
+      "target_path": "expected/build/asm/tmhc/twoplayergamemode.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/carweapbay",
+      "target_path": "expected/build/asm/tmhc/carweapbay.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/dynointeractive",
+      "target_path": "expected/build/asm/tmhc/dynointeractive.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/color",
+      "target_path": "expected/build/asm/tmhc/color.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "sdk/libgcc2",
+      "target_path": "expected/build/asm/sdk/libgcc2.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "sdk/crt0",
+      "target_path": "expected/build/asm/sdk/crt0.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/299C10",
+      "target_path": "expected/build/asm/data/299C10.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/elf_header",
+      "target_path": "expected/build/asm/data/elf_header.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/48C420",
+      "target_path": "expected/build/asm/data/48C420.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/338AEC",
+      "target_path": "expected/build/asm/data/338AEC.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/339B38",
+      "target_path": "expected/build/asm/data/339B38.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/445360",
+      "target_path": "expected/build/asm/data/445360.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/32C080",
+      "target_path": "expected/build/asm/data/32C080.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/353774",
+      "target_path": "expected/build/asm/data/353774.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/3330B4",
+      "target_path": "expected/build/asm/data/3330B4.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/3FBCF8",
+      "target_path": "expected/build/asm/data/3FBCF8.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/353644",
+      "target_path": "expected/build/asm/data/353644.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/4F670B",
+      "target_path": "expected/build/asm/data/4F670B.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/32BF00",
+      "target_path": "expected/build/asm/data/32BF00.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/32F6D4",
+      "target_path": "expected/build/asm/data/32F6D4.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/2A6D00",
+      "target_path": "expected/build/asm/data/2A6D00.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "data/2C8E00",
+      "target_path": "expected/build/asm/data/2C8E00.s.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    },
+    {
+      "name": "tmhc/Slink.cpp.o",
+      "target_path": "expected/build/src/tmhc/Slink.cpp.o",
+      "base_path": "build/src/tmhc/Slink.cpp.o",
+      "metadata": {
+        "progress_categories": []
+      },
+      "symbol_mappings": {
+        "func_022BEF68": "__5Slink",
+        "func_022C0BB0": "Platform_Deinit__5Slink"
+      }
+    },
+    {
+      "name": "tmhc/McFileInfo.cpp.o",
+      "target_path": "expected/build/src/tmhc/McFileInfo.cpp.o",
+      "base_path": "build/src/tmhc/McFileInfo.cpp.o",
+      "metadata": {
+        "progress_categories": []
+      }
+    }
+  ],
+  "progress_categories": []
+}

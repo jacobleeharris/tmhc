@@ -11,10 +11,10 @@ A list of asset types and their descriptions can be found in [ASSETS.md](ASSETS.
 
 # Setup
 1. Extract TM.ELF from "TMHC_Later_Working.iso" (2005-08-11)
-2. Rename to TMHC.ELF
+2. Rename to tmhc.elf
 3. Place in config folder
 4. Create virtual Python environment using `venv` with command: `python -m venv .venv`
-5. Activate virtual Python environment with command: `source .venv/Scripts/activate`
+5. Activate virtual Python environment with command: `source .venv/bin/activate`
 6. Install dependencies using command: `pip install -U -r requirements.txt`
 7. Split the binary using Splat: `./configure.py -c`
 8. Run a build with `ninja`
@@ -26,3 +26,9 @@ Contributions are welcome and are encouraged! If you would like to help out, ple
 This project would not be possible without these tools.
 - [GNU GCC](https://github.com/gcc-mirror/gcc) - C/C++ compiler and friends
 - [splat](https://github.com/ethteck/splat) - Binary splitter for matching decompilations
+- [ninja](https://ninja-build.org) - Quick and simple build system
+
+# References
+Code/setup is heavily inspired by:
+- [Kingdom Hearts 1 Decompilation](https://github.com/ethteck/kh1)
+- [PaRappa the Rapper 2 Decompilation](https://github.com/parappadev/parappa2/)

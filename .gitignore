@@ -17,4 +17,4 @@ __pycache__
 *.ninja
 .splache
 compile_commands.json
-.ninja_log
+.ninja_*
