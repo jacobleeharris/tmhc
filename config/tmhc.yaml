@@ -29,8 +29,8 @@ segments:
     start: 0x1000
     vram: 0x2100000
     bss_size: 0x3fbcf8
-    subalign: 1
-    align: 4
+    subalign: null
+    align: 1
     subsegments:
       # .text
       - [0x1000, asm, sdk/crt0]
@@ -496,14 +496,14 @@ segments:
       - [0x32bf00, databin] # .gcc_except_table
       - [0x32c080, databin] # .sdata
       # - [0xb54, sbss] # .sbss
-      - [0x32f6d4, databin] # .reginfo
-      - [0x3330b4, databin] # .DVP.overlay
-      - [0x338aec, databin] # .debug_str
-      - [0x339b38, databin] # .stab
-      - [0x353644, databin] # .stabstr
-      - [0x353774, databin] # .mdebug
-      - [0x3fbcf8, databin] # .bss
-      - [0x445360, databin] # .symtab
-      - [0x48c420, databin] # .strtab
-      - [0x4f670b, databin] # .shstrtab
+  - [0x32f6d4, databin] # .reginfo
+  - [0x3330b4, databin] # .DVP.overlay
+  - [0x338aec, databin] # .debug_str
+  - [0x339b38, databin] # .stab
+  - [0x353644, databin, section/stabstr] # .stabstr
+  - [0x353774, databin] # .mdebug
+  - [0x3fbcf8, databin] # .bss
+  - [0x445360, databin] # .symtab
+  - [0x48c420, databin, section/strtab] # .strtab
+  - [0x4f670b, databin, section/shstrtab] # .shstrtab
   - [0x4f71b4]
