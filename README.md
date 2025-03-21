@@ -32,3 +32,4 @@ This project would not be possible without these tools.
 Code/setup is heavily inspired by:
 - [Kingdom Hearts 1 Decompilation](https://github.com/ethteck/kh1)
 - [PaRappa the Rapper 2 Decompilation](https://github.com/parappadev/parappa2/)
+- [Shadow of the Colossus Decompilation](https://github.com/Fantaskink/SOTC/)

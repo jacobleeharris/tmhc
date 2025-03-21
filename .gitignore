@@ -18,3 +18,4 @@ __pycache__
 .splache
 compile_commands.json
 .ninja_*
+objdiff.json

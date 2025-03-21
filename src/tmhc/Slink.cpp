@@ -81,7 +81,6 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Init__5Slinki);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Reset__5Slink);
 
-INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Deinit__5Slink);
-/*void Slink::Platform_Deinit() {
+void Slink::Platform_Deinit() {
     Platform_Disconnect();
-}*/
+}
