@@ -17635,3 +17635,5 @@ Platform_ManualFlowControl__5Slinkb = 0x022C0AB8; // type:func visibility:global
 Platform_Init__5Slinki = 0x022C0AC0; // type:func visibility:global
 Platform_Reset__5Slink = 0x022C0B58; // type:func visibility:global
 Platform_Deinit__5Slink = 0x022C0BB0; // type:func visibility:global
+__builtin_vec_new = 0x02245EE0; // type:func visibility:global allow_duplicated:True
+m_pFileBufferLoc = 0x0242E2B8; // type:u32

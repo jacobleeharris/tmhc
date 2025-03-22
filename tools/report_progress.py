@@ -67,7 +67,7 @@ def main():
     save(total_report, "progress/total_progress.json")
     
     for category, percent in folder_percentages.items():
-        if category not in ["sdk", "all"]: # Skip the sdk and all categories
+        if category not in ["sdk", "all", "data"]: # Skip the sdk and all categories
             print(f"{category} percentage: {percent:.4f}%")
             report = {
                 "schemaVersion": 1,

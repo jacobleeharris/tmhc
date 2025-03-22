@@ -156,7 +156,7 @@ def build_stuff(linker_entries: List[LinkerEntry]):
             build(entry.object_path, entry.src_paths, "cpp")
         elif isinstance(seg, splat.segtypes.common.c.CommonSegC):
             build(entry.object_path, entry.src_paths, "cc")
-        elif isinstance(seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(seg, splat.segtypes.common.rodatabin.CommonSegRodatabin):
+        elif isinstance(seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(seg, splat.segtypes.common.textbin.CommonSegTextbin) or isinstance(seg, splat.segtypes.common.rodatabin.CommonSegRodatabin):
             build(entry.object_path, entry.src_paths, "as", variables={"override": override})
         else:
             print(f"ERROR: Unsupported build segment type {seg.type}")
@@ -200,6 +200,7 @@ PROBLEMATIC_FUNCS = set(
         "updateItem__5SlinkPUc",
         "runFromDest__5Slink",
         "getFileHandle__5Slink",
+        "responseFileExists__5SlinkUc",
         "sendCommand__5SlinkUcUcUi",
         "debugPrint__5SlinkPc",
         "__8SlinkQuei",

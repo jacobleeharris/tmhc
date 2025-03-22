@@ -17,11 +17,13 @@ options:
   asm_path: asm
   src_path: src
   build_path: build
-  section_order: [".text", ".data", ".rodata", ".bss"]
-  auto_link_sections: [".data", ".rodata", ".bss"]
+  section_order: [".text", ".data", ".rodata", ".sdata", ".gcc_except_table", ".sbss", ".bss"]
+  auto_link_sections: [".data", ".rodata", ".sdata", ".gcc_except_table", ".bss"]
   disasm_unknown: True
   named_regs_for_c_funcs: False
   auto_decompile_empty_functions: False
+  gp_value: 0x2433070
+  use_gp_rel_macro_nonmatching: False
 segments:
   - [0, databin, elf_header]
   - name: main
@@ -490,11 +492,11 @@ segments:
       # - [0x2330f0, asm, tmhc/mgcl2]
       # - [0x25bd70, asm, tmhc/sce2]
 
-      - [0x299c10, databin] # .vutext
-      - [0x2a6d00, databin] # .data
-      - [0x2c8e00, databin] # .rodata
-      - [0x32bf00, databin] # .gcc_except_table
-      - [0x32c080, databin] # .sdata
+      - [0x299c10, textbin] # .vutext
+      - [0x2a6d00, data] # .data
+      - [0x2c8e00, rodata] # .rodata
+      - [0x32bf00, rodatabin] # .gcc_except_table
+      - [0x32c080, sdata] # .sdata
       # - [0xb54, sbss] # .sbss
   - [0x32f6d4, databin] # .reginfo
   - [0x3330b4, databin] # .DVP.overlay
