@@ -2,7 +2,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 
 | Location | Extension | Custom Format | Header | Header Size | Header String | Description |
 | --- | --- | --- | --- | --- | --- | --- |
-/vag | [VPK](#vpk-format) | Y | 20 4B 50 56 | 0x800 | "KPV" | Unrelated to Valve's Package format.
+/vag | [VPK](#vpk-format) | N | 20 4B 50 56 | 0x800 | "KPV" | Standard PS2 VAG files
 /trans | [BDD](#bdd-format) | Y | unique | N/A | N/A | Header starts with name of level.
 /suburbs | BDD
 /stadium | BDD
