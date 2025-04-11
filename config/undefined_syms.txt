@@ -1,0 +1,4 @@
+strlen = 0x2a511c;
+printf = 0x0236BF28;
+__builtin_vec_delete = 0x02245E68;
+__builtin_delete = 0x0236BF28;

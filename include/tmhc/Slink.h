@@ -1,10 +1,19 @@
+// TODO: Identify correct C/C++ file for this
+
 #include <common.h>
 
 // OpenSSL
 struct EVP_PKEY_CTX;
 
+struct FileAck {
+    char padding[0x14];
+    short field_1;
+    short field_2;
+};
+
 class Slink {
 private:
+    FileAck acks[4];
     void(*field0_0x0)(int, int, void*);
     void* field1_0x4;
     char* field2_0x8;
@@ -32,8 +41,8 @@ public:
     void sendName(uchar param_1);
     void sendVersion();
     void updateItem(uchar param_1);
-    void sendFileBlock(uchar param_1);
-    void sendFileAck(uchar param_1, uchar param_2);
+    long sendFileBlock(uchar param_1);
+    long sendFileAck(uchar param_1, uchar param_2);
     void receiveFile(uchar param_1);
     void runFromDest();
     uint getFileHandle();
@@ -58,10 +67,10 @@ public:
 
 class SlinkQue {
     private:
-        // Determine type of queue
-        uchar* buffer;
         int size;
+        uchar* buffer;
         int field2_0x8;
+        // Current position
         int field3_0xc;
     public:
         SlinkQue(int size);

@@ -1,6 +1,10 @@
 #include <Slink.h>
+#include <string.h>
+#include <stdio.h>
 
 extern void* m_pFileBufferLoc;
+extern SlinkQue* m_ReadQ;
+extern SlinkQue* m_WriteQ;
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", __5Slink);
 /*Slink::Slink() {
@@ -65,12 +69,39 @@ void Slink::enableCommunicationFlow(bool param_1) {
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendName__5SlinkUc);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendVersion__5Slink);
+/*void Slink::sendVersion() {
+    uchar buffer[16];
+    uchar* version = this->field0_0x0(this->field_0x34, this->field_0x20, this->field_0x24);
+    buffer[0] = 0;
+    int length = strlen((char*) version);
+    sendCommand(0x82, '\0', length + 1);
+    int lengthWithNullByte = length + 1;
+    if (lengthWithNullByte != 0) {
+        for (int i = 0; i < lengthWithNullByte; i++) {
+            char currentChar = version[i];
+            buffer[0] = currentChar ^ buffer[0];
+        }
+    }
+    Platform_Write(version, lengthWithNullByte);
+    Platform_Write(buffer, 1);
+    Platform_WriteFlush();
+}*/
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", updateItem__5SlinkPUc);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendFileBlock__5SlinkUc);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendFileAck__5SlinkUcUc);
+/*long Slink::sendFileAck(uchar i, uchar param_2) {
+    if (param_2 == 0x85) {
+        FileAck* ack = &acks[i];
+        if (++ack->field_1 <= ack->field_2) {
+            return sendFileBlock(i);
+        }
+    } else {
+        return printf("Retry block %d\n", acks[i].field_1);
+    }
+}*/
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", receiveFile__5SlinkUc);
 
@@ -82,32 +113,63 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", responseFileExists__5SlinkUc);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendCommand__5SlinkUcUcUi);
 
-INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", debugPrint__5SlinkPc);
-/*int debugPrint(char* param_1) {
+int Slink::debugPrint(char* param_1) {
     return printf(param_1);
-}*/
+}
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", __8SlinkQuei);
 /*SlinkQue::SlinkQue(int size) {
-    this->buffer = new uchar[size];
     this->size = size;
+    this->buffer = new uchar[this->size];
     this->field2_0x8 = 0;
     this->field3_0xc = 0;
 }*/
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", _$_8SlinkQue);
+// Must be marked as virtual but errors with .gnu.linkonce
+/*SlinkQue::~SlinkQue() {
+    if (this->buffer != NULL) {
+        delete[] this->buffer;
+    }
+}*/
 
-INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", SpaceAvailable__8SlinkQue);
+int SlinkQue::SpaceAvailable() {
+    int iVar1 = this->field3_0xc;
+    int iVar2 = this->field2_0x8;
+    if (iVar2 > iVar1) {
+        return iVar2 - iVar1;
+    }
+    return (this->size - iVar1) + iVar2;
+}
 
-INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Put__8SlinkQueUc);
+void SlinkQue::Put(uchar param_1) {
+    int iVar1 = this->field3_0xc;
+    this->buffer[iVar1] = param_1;
+    iVar1++;
+    this->field3_0xc = iVar1;
+    if (this->size <= iVar1) {
+        this->field3_0xc = 0;
+    }
+}
 
 bool SlinkQue::IsEmpty() {
     return this->field3_0xc == this->field2_0x8;
 }
 
-INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Take__8SlinkQue);
+// INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Take__8SlinkQue);
+uchar SlinkQue::Take() {
+    uchar value = this->buffer[this->field2_0x8++];
+    if (this->size <= this->field2_0x8) {
+        this->field2_0x8 = 0;
+    }
+    return value;
+}
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", SpaceUsed__8SlinkQue);
+/*int SlinkQue::SpaceUsed() {
+    int spaceAvailable = SpaceAvailable();
+    return this->size - spaceAvailable;
+}*/
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Disconnect__5Slink);
 
