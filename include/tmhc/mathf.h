@@ -1,7 +1,8 @@
 #include <common.h>
+#include <libvu0.h>
 
 // Multiply operations
-_fvector mathfMulVec(float a[3], _fvector b, _fvector c);
+_fvector mathfMulVec(sceVu0FVECTOR a, _fvector b, _fvector c);
 
 void mathfMulVec4x4(float a[3], _fvector b, _fvector c);
 void mathfMulTransVecOld(float a[3], _fvector b, _fvector c);

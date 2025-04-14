@@ -15,10 +15,6 @@ typedef unsigned short u16;
 typedef unsigned int u32;
 typedef unsigned long u64;
 
-typedef unsigned int u_int;
-
-typedef unsigned short u_short;
-
 typedef float f32;
 
 #define UNK_TYPE s32
@@ -34,6 +30,6 @@ typedef float f32;
 
 #define ARRAYSIZEU(arr) (sizeof(arr) / sizeof(arr[0]))
 #define ARRAYSIZE(arr)  (s32)(sizeof(arr) / sizeof(arr[0]))
-#define CLEAR(x) { u_int i; char *p = (char*)&x; for (i = 0; i < sizeof(x); i++) *p++ = 0; }
+#define CLEAR(x) { uint i; char *p = (char*)&x; for (i = 0; i < sizeof(x); i++) *p++ = 0; }
 
 #endif /* _TMHC_COMMON_H */

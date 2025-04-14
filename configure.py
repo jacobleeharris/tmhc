@@ -28,7 +28,7 @@ ELF_PATH = f"build/{BASENAME}"
 MAP_PATH = f"config/{BASENAME}.map"
 PRE_ELF_PATH = f"build/{BASENAME}.elf"
 
-COMMON_INCLUDES = "-Iinclude -Iinclude/tmhc -Iinclude/sdk -Iinclude/gcc -Iinclude/gcc/gcc-lib -Iinclude/gcc/machine -Iinclude/gcc/sys"
+COMMON_INCLUDES = "-Iinclude -Iinclude/tmhc -Iinclude/sdk -Iinclude/sdk/ee -Iinclude/gcc -Iinclude/gcc/gcc-lib -Iinclude/gcc/machine -Iinclude/gcc/sys"
 COMPILER_DIR = f"{TOOLS_DIR}/ee-gcc2.95.3-136/bin"
 
 COMPILER_FLAGS     = "-nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8"

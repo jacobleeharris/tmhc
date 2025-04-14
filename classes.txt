@@ -253,7 +253,7 @@ td.cpp
 /projects/rtime/CVS/MediusGameCommLibrary/src/mcl.c
 /projects/rtime/CVS/MediusGameCommLibrary/src/mgcl_local.h
 /projects/rtime/CVS/dme_object/src/DmeObject.c
-?/projects/rtime/CVS/dme_object/src/DmeObjectMessage.c
+/projects/rtime/CVS/dme_object/src/DmeObjectMessage.c
 /projects/rtime/CVS/dme_object/src/DmeObjectMessage.h
 /projects/rtime/CVS/dme_object/src/DmeObjectRegister.c
 /projects/rtime/CVS/dme_object/src/ClientMgr.c
