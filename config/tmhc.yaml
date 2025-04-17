@@ -394,7 +394,7 @@ segments:
       - [0x161330, asm, tmhc/debugdraw] # texDraw.cpp?
       - [0x161fc8, asm, tmhc/devlinknamedpipe] # TMSlink.cpp?
       - [0x1623c0, asm, tmhc/particletype] # particle.cpp?
-      - [0x163f08, cpp, tmhc/FileMgr] # FileMgr.cpp, printNothing func is included here
+      - [0x163f08, asm, tmhc/FileMgr] # FileMgr.cpp, printNothing func is included here
       - [0x165258, asm, tmhc/fog]
       - [0x165aa8, asm, tmhc/fogdyn]
       - [0x165f90, asm, tmhc/font] # font.cpp

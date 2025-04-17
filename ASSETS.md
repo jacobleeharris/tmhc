@@ -31,7 +31,7 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /snd | [BNK](#bnk-format) | ? | N/A | N/A | N/A | Twisted Metal sound bank files
 /snd | [XFX](#xfx-format) | ? | 58 46 44 58 | N/A | "XFDX" | Possibly XFX Reverb format?
 /snd | [PCM](#pcm-format) | ? | unique | | N/A | Unrelated to regular PCM
-/skat | CTL | Y | 53 43 54 4C | N/A | "SCTL" |
+/skat | [CTL](#ctl-format) | Y | 53 43 54 4C | N/A | "SCTL" |
 /skat | [SKX](#skx-format) | Y | 53 4B 45 58 | N/A | "SKEX" |
 /rst | [RST](#rstmdr-format) | Y | A5 92 96 4E | N/A | "...N" | Unrelated to reStructured Text format, has same header as MDR format and file without extension
 /rst | [MDR](#rstmdr-format) | Y | A5 92 96 4E | N/A | "...N" |
@@ -68,13 +68,15 @@ can be used to extract files from them. Usually, in the SBL and DAT file format.
 SKX files are compressed VAG files. The only example of this is `TM_PS2.SKX` in the `/SND` folder which has 2 VAG files named `KAudioDLL`.
 Both appear to be the same and can also be played with [PSound](https://www.romhacking.net/utilities/679/).
 
+# CTL format
+
 # XFX format
 
 # PCM format
 This does not appear to be PCM / ADPCM. PSound, vgmstream, nor ffmpeg will play this file. Code insights show this as possibly Nellymoser PCM which ffmpeg should support.
 
 # RST/MDR format
-The RST/MDR format describes how levels and objects are rendered in regards to fog, lighting, background and ambient colors, and more. A hex pattern (usable with ImHex) can be found in the `tools` folder of this repository. Files are padded to 0x3FFF (16384 bytes) by default.
+The RST/MDR format describes how levels and objects are rendered in regards to fog, lighting, background and ambient colors, and more. Files are padded to 0x3FFF (16384 bytes) by default.
 
 # GPS/FPT format
 
