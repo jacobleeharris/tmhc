@@ -230,7 +230,7 @@ segments:
       - [0xa9fc8, asm, tmhc/ingamemenu]
       - [0xaa150, asm, tmhc/ingamerootmenu]
       - [0xaa3b8, asm, tmhc/widget2]
-      - [0xab330, asm, tmhc/interactive] # Interactive.cpp
+      - [0xab330, asm, tmhc/Interactive] # Interactive.cpp
       - [0xac138, asm, tmhc/level]
       - [0xac298, asm, tmhc/destructiblesoundmanager]
       - [0xac388, asm, tmhc/scenterlevelsound]

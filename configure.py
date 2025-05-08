@@ -34,12 +34,22 @@ COMPILER_DIR = f"{TOOLS_DIR}/ee-gcc2.95.3-136/bin"
 COMPILER_FLAGS     = "-nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8"
 COMPILER_FLAGS_CPP = "-nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8"
 
-COMPILE_CMD = (
-    f"wine {COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS}"
-)
-COMPILE_CMD_CPP = (
-    f"wine {COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS_CPP}"
-)
+if sys.platform == "darwin" or sys.platform.startswith("linux"):
+    COMPILE_CMD = (
+        f"wine {COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS}"
+    )
+    COMPILE_CMD_CPP = (
+        f"wine {COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS_CPP}"
+    )
+elif os.name == 'nt':
+    COMPILE_CMD = (
+        f"{COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS}"
+    )
+    COMPILE_CMD_CPP = (
+        f"{COMPILER_DIR}/ee-gcc.exe -c {COMMON_INCLUDES} {COMPILER_FLAGS_CPP}"
+    )
+else:
+    raise Exception("Unknown OS!")
 
 def exec_shell(command: List[str], stdout = subprocess.PIPE) -> str:
     ret = subprocess.run(
