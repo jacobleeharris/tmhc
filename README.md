@@ -8,7 +8,7 @@ Note: This repository assumes a POSIX environment. Please use WSL or Docker on a
 TM.ELF SHA-1 Hash: `59695de214d38d1c0af9167412271fe2a446a13a`
 
 # Documentation
-- [FAQ](docs/faq.md)
+- [FAQ](docs/FAQ.md)
 - [Classes and header files](docs/CLASSES.md)
 - [Assets and file types](docs/ASSETS.md)
 - [Packets and networking](docs/PACKETS.md)
