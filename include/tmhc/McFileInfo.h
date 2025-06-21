@@ -3,7 +3,7 @@
 class McFileInfo {
 public:
     McFileInfo();
-    bool operator==(const McFileInfo& other) const;
+    McFileInfo& operator=(const McFileInfo& other);
     void setDirectory(char* directory);
     void addFile(char* file, void* param_2, u32 param_3, bool param_4);
     void setScreenName(char* screenName);
