@@ -41,7 +41,8 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /pts | [CPT](#cpt-format) | Y | 00 20 28 12 |
 /pts | [PKS](#pks-format) | Y | 00 20 28 12 |
 /pts | [CPA](#cpa-format) | Y | 00 20 28 12 |
-/pts | [FPT](#gpsfpt-format) | Y | 03 20 16 07 |
+/pts | [FPT](#gpsfpt-format) | Y | 03 20 16 07 | Used for Helicoptor path finding
+/pts | [HLI](#hli-format) | Y | 01 20 02 01 | 16 bytes | ". .." |
 /net | IRX | N | 7F 45 4C 46 | N/A | ".ELF" | Standard PS2 IRX modules
 /mov | PSS | N | 00 00 01 BA | N/A | N/A | Standard PS2 movie files
 /mod | IRX | N | 7F 45 4C 46 | N/A | ".ELF" | Standard PS2 IRX modules
@@ -155,5 +156,22 @@ E5 4D 18 C6 // X: -9747.47
 00 00 00 03
 01 00 10 00
 12 00 15 00
+00 00 00 00
+```
+
+# HLI format
+HLI files define where helicoptors are allowed to move. An HLI file starts with the header which is 16 bytes long. 4 bytes are the magic followed by the entry count, then followed by 8 bytes of padding.
+
+Each HLI entry contains 3 float positions which is then followed by another unknown float, followed by 2 unknown 4 byte integers. Each entry is padded to 64 bytes.
+
+Ex:
+```
+13 55 D4 C5 // X: -6794.63
+BC AD 04 46 // Y: 8491.43
+C3 07 90 43 // Z: 288.061
+
+51 58 DE 42 // Unknown: 111.172
+01 00 00 00 // Unknown data follows
+01 00 00 00
 00 00 00 00
 ```

@@ -1,6 +1,6 @@
 pre-commit
-splat64[mips]>=0.24.6,<1.0.0
-spimdisasm>=1.31.0,<2.0.0
+splat64[mips]>=0.34.1,<1.0.0
+spimdisasm>=1.33.0,<2.0.0
 colorama
 watchdog
 levenshtein
