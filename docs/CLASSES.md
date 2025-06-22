@@ -1,6 +1,26 @@
 <details open>
 <summary>Game classes: (found in strings)</summary>
 
+### Header files:
+The duplicates in this list will remain as it is unclear whether these may be the actual name linked into the binary or if a developer simply typed the wrong name in the strings.
+- AnimIndex.h
+- BlockAlloc.h
+- SafeRef.h
+- SizedStack.h
+- StringTable.h
+- TilePager.h
+- ieMap.h
+- ieMultimap.h
+- iePool.h
+- menuWidget.h
+- rbMap.h
+- safeRef.h
+- stringTable.h
+- tilePager.h
+- tilepager.h
+- version.h
+
+### C++ files:
 - actionDispatch.cpp
 - aicar.cpp
 - AiCharAttractPts.cpp
@@ -177,7 +197,7 @@
 - td.cpp
 </details>
 
-<details open>
+<details>
 <summary>Medius classes: (found in strings)</summary>
 
 - /projects/rtime/CVS/dme_client/src/Dme.c
