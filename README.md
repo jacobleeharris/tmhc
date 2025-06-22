@@ -16,7 +16,7 @@ Game:
 - [Classes and header files](docs/CLASSES.md)
 - [Assets and file types](docs/ASSETS.md)
 - [Packets and networking](docs/PACKETS.md)
-- Named debug pipes (TODO)
+- [Named debug pipes](docs/NAMED_DEBUG_PIPES.md)
 
 # Contributing
 Contributions are welcome and are encouraged! If you would like to help out, please create a pull request containing your changes to the repository.
