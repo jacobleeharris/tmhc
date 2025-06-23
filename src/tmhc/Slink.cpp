@@ -2,9 +2,9 @@
 #include <string.h>
 #include <stdio.h>
 
-extern void* m_pFileBufferLoc;
-extern SlinkQue* m_ReadQ;
-extern SlinkQue* m_WriteQ;
+extern void *m_pFileBufferLoc;
+extern SlinkQue *m_ReadQ;
+extern SlinkQue *m_WriteQ;
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", __5Slink);
 /*Slink::Slink() {
@@ -34,22 +34,28 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", isInitted__5Slink);
     return this->field_0x32;
 }*/
 
-bool Slink::fileExists(char* file, void(*callback)(int, int, void*), void* param_3) {
-    if (callback != NULL) {
+bool Slink::fileExists(char *file, void (*callback)(int, int, void *), void *param_3)
+{
+    if (callback != NULL)
+    {
         (*callback)(1, 0, param_3);
     }
     return 1;
 }
 
-bool Slink::writeFile(char* param_1, int param_2, int param_3, char* param_4, void(*callback)(int, int, void*), void* param_6) {
-    if (callback != NULL) {
+bool Slink::writeFile(char *param_1, int param_2, int param_3, char *param_4, void (*callback)(int, int, void *), void *param_6)
+{
+    if (callback != NULL)
+    {
         (*callback)(1, 0, param_6);
     }
     return 1;
 }
 
-bool Slink::readFile(char *param_1, int param_2, int param_3, char *param_4, void(*callback)(int, int, void*), void *param_6) {
-    if (callback != NULL) {
+bool Slink::readFile(char *param_1, int param_2, int param_3, char *param_4, void (*callback)(int, int, void *), void *param_6)
+{
+    if (callback != NULL)
+    {
         (*callback)(1, 0, param_6);
     }
     return 1;
@@ -62,7 +68,8 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", setReceiveFileCallback__5SlinkPFiiPv_
   this->field1_0x4 = param_2;
 }*/
 
-void Slink::enableCommunicationFlow(bool param_1) {
+void Slink::enableCommunicationFlow(bool param_1)
+{
     Platform_ManualFlowControl(param_1);
 }
 
@@ -113,7 +120,8 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", responseFileExists__5SlinkUc);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", sendCommand__5SlinkUcUcUi);
 
-int Slink::debugPrint(char* param_1) {
+int Slink::debugPrint(char *param_1)
+{
     return printf(param_1);
 }
 
@@ -133,33 +141,40 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", _$_8SlinkQue);
     }
 }*/
 
-int SlinkQue::SpaceAvailable() {
+int SlinkQue::SpaceAvailable()
+{
     int iVar1 = this->field3_0xc;
     int iVar2 = this->field2_0x8;
-    if (iVar2 > iVar1) {
+    if (iVar2 > iVar1)
+    {
         return iVar2 - iVar1;
     }
     return (this->size - iVar1) + iVar2;
 }
 
-void SlinkQue::Put(uchar param_1) {
+void SlinkQue::Put(uchar param_1)
+{
     int iVar1 = this->field3_0xc;
     this->buffer[iVar1] = param_1;
     iVar1++;
     this->field3_0xc = iVar1;
-    if (this->size <= iVar1) {
+    if (this->size <= iVar1)
+    {
         this->field3_0xc = 0;
     }
 }
 
-bool SlinkQue::IsEmpty() {
+bool SlinkQue::IsEmpty()
+{
     return this->field3_0xc == this->field2_0x8;
 }
 
 // INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Take__8SlinkQue);
-uchar SlinkQue::Take() {
+uchar SlinkQue::Take()
+{
     uchar value = this->buffer[this->field2_0x8++];
-    if (this->size <= this->field2_0x8) {
+    if (this->size <= this->field2_0x8)
+    {
         this->field2_0x8 = 0;
     }
     return value;
@@ -179,23 +194,28 @@ INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_WriteFlush__5Slink);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Read__5SlinkPUci);
 
-void Slink::Platform_RunFromDest(int param_1) {
+void Slink::Platform_RunFromDest(int param_1)
+{
 }
 
-void* Slink::Platform_GetDefaultLoadAddr() {
-    if (m_pFileBufferLoc == NULL) {
-        m_pFileBufferLoc = new void*[0x19000 / sizeof(void*)];
+void *Slink::Platform_GetDefaultLoadAddr()
+{
+    if (m_pFileBufferLoc == NULL)
+    {
+        m_pFileBufferLoc = new void *[0x19000 / sizeof(void *)];
     }
     return m_pFileBufferLoc;
 }
 
-void Slink::Platform_ManualFlowControl(bool param_1) {
+void Slink::Platform_ManualFlowControl(bool param_1)
+{
 }
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Init__5Slinki);
 
 INCLUDE_ASM("asm/nonmatchings/tmhc/Slink", Platform_Reset__5Slink);
 
-void Slink::Platform_Deinit() {
+void Slink::Platform_Deinit()
+{
     Platform_Disconnect();
 }
