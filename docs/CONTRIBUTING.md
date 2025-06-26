@@ -16,6 +16,8 @@ Optional tools include a modern C/C++ compiler (for type checking) and [objdiff]
 7. Split the binary using Splat: `./configure.py -c`
 8. Run a build with `ninja`
 
+This project uses [pre-commit](https://pre-commit.com) to ensure commits are correctly formatted before pushing changes. Please install and use pre-commit when committing your changes.
+
 ## Submitting changes
 Changes can be made by submitting a pull request to the main repository from a repository with the changes.
 

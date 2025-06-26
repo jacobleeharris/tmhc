@@ -11,28 +11,27 @@ struct FileAck {
     short field_2;
 };
 
+// FileAck acks[4];
+
 class Slink {
 private:
-    FileAck acks[4];
     void(*field0_0x0)(int, int, void*);
     void* field1_0x4;
     char* field2_0x8;
 
     // TODO: members here
+    void* padding[9];
 
     char field_0x30;
     char field_0x31;
-    bool field_0x32;
-    // undefined
-    void* field_0x33;
-    int field_0x34;
+    uchar field_0x32;
 public:
     Slink();
-    ~Slink();
+    virtual ~Slink();
     int init(EVP_PKEY_CTX *ctx);
     void deinit();
     void update();
-    bool isInitted();
+    uchar isInitted();
     bool fileExists(char* file, void(*callback)(int, int, void*), void* param_3);
     bool writeFile(char* param_1, int param_2, int param_3, char* param_4, void(*callback)(int, int, void*), void* param_6);
     bool readFile(char *param_1, int param_2, int param_3, char *param_4, void(*callback)(int, int, void*), void *param_6);
@@ -49,7 +48,12 @@ public:
     // Return type of bool?
     void responseFileExists(uchar param_1);
     long sendCommand(uchar param_1, uchar param_2, uint param_3);
-    int debugPrint(char* param_1);
+
+    virtual void** getMySlinkData(int* param_1);
+    virtual int getNumSlinkDataItems() = 0;
+    virtual uchar* getVersionString() = 0;
+    virtual int getElapsedMilliseconds() = 0;
+    virtual int debugPrint(char* param_1);
 
     void Platform_Disconnect();
     int Platform_Write(uchar* param_1, int param_2);
@@ -60,7 +64,7 @@ public:
     void Platform_ManualFlowControl(bool param_1);
 
     // Determine return type
-    void Platform_Init(int param_1);
+    int Platform_Init(int size);
     void Platform_Reset();
     void Platform_Deinit();
 };
@@ -70,11 +74,10 @@ class SlinkQue {
         int size;
         uchar* buffer;
         int field2_0x8;
-        // Current position
-        int field3_0xc;
+        int currentPos;
     public:
         SlinkQue(int size);
-        ~SlinkQue();
+        virtual ~SlinkQue();
         int SpaceAvailable();
         void Put(uchar param_1);
         bool IsEmpty();

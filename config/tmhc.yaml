@@ -17,13 +17,14 @@ options:
   asm_path: asm
   src_path: src
   build_path: build
-  section_order: [".text", ".data", ".rodata", ".sdata", ".gcc_except_table", ".sbss", ".bss"]
+  section_order: [".text", ".data", ".linkonce", ".rodata", ".sdata", ".gcc_except_table", ".sbss", ".bss"]
   auto_link_sections: [".data", ".rodata", ".sdata", ".gcc_except_table", ".bss"]
   disasm_unknown: True
   named_regs_for_c_funcs: False
   auto_decompile_empty_functions: False
   gp_value: 0x2433070
   use_gp_rel_macro_nonmatching: False
+  extensions_path: tools/splat_ext
 segments:
   - [0, databin, elf_header]
   - name: main
@@ -313,7 +314,7 @@ segments:
       - [0xfc598, asm, tmhc/thumperspecialweap]
       - [0xfd2a8, asm, tmhc/timberdebris] # timberdebris.cpp
       - [0xfe638, asm, tmhc/tilepager] # TilePager.cpp
-      - [0x100100, asm, tmhc/tmslink] # TMSlink.cpp
+      - [0x100100, cpp, tmhc/TMSlink] # TMSlink.cpp
       - [0x1007d0, asm, tmhc/TransitionLoader] # TransitionLoader.cpp
       - [0x100b50, asm, tmhc/transzonescript]
       - [0x100be0, asm, tmhc/twoplayerdeathscript]
@@ -392,7 +393,7 @@ segments:
       - [0x15e6c0, asm, tmhc/cspool] # CsPool.cpp
       - [0x15f048, asm, tmhc/dbs] # dbs.cpp
       - [0x161330, asm, tmhc/debugdraw] # texDraw.cpp?
-      - [0x161fc8, asm, tmhc/devlinknamedpipe] # TMSlink.cpp?
+      - [0x161fc8, asm, tmhc/devlinknamedpipe]
       - [0x1623c0, asm, tmhc/particletype] # particle.cpp?
       - [0x163f08, asm, tmhc/FileMgr] # FileMgr.cpp, printNothing func is included here
       - [0x165258, asm, tmhc/fog]
@@ -460,7 +461,7 @@ segments:
       - [0x1bb478, asm, tmhc/savefademenu]
       - [0x1bb5c0, asm, tmhc/ShiftJIS]
       - [0x1bb948, asm, tmhc/SKATgame2] # SKATgame.cpp
-      - [0x1bff68, cpp, tmhc/Slink] # TMSlink.cpp?
+      - [0x1bff68, cpp, tmhc/Slink]
       - [0x1c1bd0, asm, tmhc/snd2] # Another bunch of sound functions
       - [0x1caf28, asm, tmhc/stats] # stats.cpp
       - [0x1cc360, asm, tmhc/TaskManager] # TaskManager.cpp
@@ -494,6 +495,11 @@ segments:
 
       - [0x299c10, textbin] # .vutext
       - [0x2a6d00, data] # .data
+
+      # VTables
+      - [0x2c8c38, linkonce, SlinkQue_virtual_table, _vt$8SlinkQue]
+      - [0x2c8c50, linkonce, Slink_virtual_table, _vt$5Slink]
+
       - [0x2c8e00, rodata] # .rodata
       - [0x32bf00, rodatabin] # .gcc_except_table
       - [0x32c080, sdata] # .sdata

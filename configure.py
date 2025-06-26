@@ -31,8 +31,8 @@ PRE_ELF_PATH = f"build/{BASENAME}.elf"
 COMMON_INCLUDES = "-Iinclude -Iinclude/tmhc -Iinclude/sdk -Iinclude/sdk/ee -Iinclude/gcc -Iinclude/gcc/gcc-lib -Iinclude/gcc/machine -Iinclude/gcc/sys"
 COMPILER_DIR = f"{TOOLS_DIR}/ee-gcc2.95.3-136/bin"
 
-COMPILER_FLAGS     = "-nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8"
-COMPILER_FLAGS_CPP = "-nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8"
+COMPILER_FLAGS     = "-nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8 -fopt-stack"
+COMPILER_FLAGS_CPP = "-nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8 -fopt-stack"
 
 if sys.platform == "darwin" or sys.platform.startswith("linux"):
     COMPILE_CMD = (
