@@ -41,9 +41,9 @@ This file contains a list of the asset types used by Twisted Metal: Harbor City.
 /pts | [CPT](#cpt-format) | Y | 00 20 28 12 |
 /pts | [PKS](#pks-format) | Y | 00 20 28 12 |
 /pts | [CPA](#cpa-format) | Y | 00 20 28 12 |
-/pts | [FPT](#gpsfpt-format) | Y | 03 20 16 07 | N/A | ". .." | Used for Helicoptor path finding
+/pts | [FPT](#gpsfpt-format) | Y | 03 20 16 07 | N/A | ". .." |
 /pts | [VPT](#gpsfpt-format) | Y | 03 20 16 07 | N/A | ". .." |
-/pts | [HLI](#hli-format) | Y | 01 20 02 01 | 16 bytes | ". .." |
+/pts | [HLI](#hli-format) | Y | 01 20 02 01 | 16 bytes | ". .." | Used for Helicoptor path finding
 /net | IRX | N | 7F 45 4C 46 | N/A | ".ELF" | Standard PS2 IRX modules
 /mov | PSS | N | 00 00 01 BA | N/A | N/A | Standard PS2 movie files
 /mod | IRX | N | 7F 45 4C 46 | N/A | ".ELF" | Standard PS2 IRX modules
