@@ -24,6 +24,7 @@ options:
   auto_decompile_empty_functions: False
   gp_value: 0x2433070
   use_gp_rel_macro_nonmatching: False
+  migrate_rodata_to_functions: False
 segments:
   - [0, databin, elf_header]
   - name: main
