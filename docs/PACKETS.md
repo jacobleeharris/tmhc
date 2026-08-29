@@ -155,292 +155,582 @@ TODO: Write descriptions of packet + packet format (like wiki.vg)
 
 List of all packet callbacks (not in order):
 
-`MediusUniqueCallbackAccountDeleteResponseHandler`
-
-`MediusUniqueCallbackAccountGetIDResponseHandler`
-
-`MediusUniqueCallbackAccountGetProfileResponseHandler`
-
-`MediusUniqueCallbackAccountLoginResponseHandler`
-
-`MediusUniqueCallbackAccountLogoutResponseHandler`
-
-`MediusUniqueCallbackAccountRegistrationResponseHandler`
-
-`MediusUniqueCallbackAccountUpdatePasswordResponseHandler`
-
-`MediusUniqueCallbackAccountUpdateProfileResponseHandler`
-
-`MediusUniqueCallbackAccountUpdateStatsResponseHandler`
-
-`MediusUniqueCallbackAddPlayerToClanResponseHandler`
-
-`MediusUniqueCallbackAddToBuddyListConfirmationResponseHandler`
-
-`MediusUniqueCallbackAddToBuddyListFwdConfirmationRequestHandler`
-
-`MediusUniqueCallbackAddToBuddyListFwdConfirmationResponseHandler`
-
-`MediusUniqueCallbackAddToBuddyListResponseHandler`
-
-`MediusUniqueCallbackAddToIgnoreListResponseHandler`
-
-`MediusUniqueCallbackAnonymousLoginResponseHandler`
-
-`MediusUniqueCallbackBanPlayerResponseHandler`
-
-`MediusUniqueCallbackBillingDetailRequestHandler`
-
-`MediusUniqueCallbackBillingDetailResponseHandler`
-
-`MediusUniqueCallbackBillingInfoRequestHandler`
-
-`MediusUniqueCallbackBillingInfoResponseHandler`
-
-`MediusUniqueCallbackBillingListRequestHandler`
-
-`MediusUniqueCallbackBillingListResponseHandler`
-
-`MediusUniqueCallbackBillingLoginRequestHandler`
-
-`MediusUniqueCallbackBillingLoginResponseHandler`
-
-`MediusUniqueCallbackBillingTunnelRequestHandler`
-
-`MediusUniqueCallbackBillingTunnelResponseHandler`
-
-`MediusUniqueCallbackBinaryFwdMessageHandler`
-
-`MediusUniqueCallbackBinaryMessageHandler`
-
-`MediusUniqueCallbackChannelInfoResponseHandler`
-
-`MediusUniqueCallbackChannelList_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackChannelListResponseHandler`
-
-`MediusUniqueCallbackCheckMyClanInvitationsResponseHandler`
-
-`MediusUniqueCallbackClanLadderListResponseHandler`
-
-`MediusUniqueCallbackClanLadderPositionResponseHandler`
-
-`MediusUniqueCallbackClearGameListFilterResponseHandler`
-
-`MediusUniqueCallbackConfirmClanTeamChallengeResponseHandler`
-
-`MediusUniqueCallbackCreateChannelResponseHandler`
-
-`MediusUniqueCallbackCreateClanResponseHandler`
-
-`MediusUniqueCallbackCreateGameResponseHandler`
-
-`MediusUniqueCallbackDeleteClanMessageResponseHandler`
-
-`MediusUniqueCallbackDisbandClanResponseHandler`
-
-`MediusUniqueCallbackDnasSignaturePostHandler`
-
-`MediusUniqueCallbackEndGameReportHandler`
-
-`MediusUniqueCallbackErrorMessageHandler`
-
-`MediusUniqueCallbackFileCancelOperationResponseHandler`
-
-`MediusUniqueCallbackFileCloseResponseHandler`
-
-`MediusUniqueCallbackFileCreateResponseHandler`
-
-`MediusUniqueCallbackFileDeleteResponseHandler`
-
-`MediusUniqueCallbackFileDownloadResponseHandler`
-
-`MediusUniqueCallbackFileDownloadStreamResponseHandler`
-
-`MediusUniqueCallbackFileGetAttributesResponseHandler`
-
-`MediusUniqueCallbackFileGetMetaDataResponseHandler`
-
-`MediusUniqueCallbackFileListFilesResponseHandler`
-
-`MediusUniqueCallbackFileSearchByMetaDataResponseHandler`
-
-`MediusUniqueCallbackFileUpdateAttributesResponseHandler`
-
-`MediusUniqueCallbackFileUpdateMetaDataResponseHandler`
-
-`MediusUniqueCallbackFileUploadFromClientResponseHandler`
-
-`MediusUniqueCallbackFileUploadResponseHandler`
-
-`MediusUniqueCallbackFindPlayerResponseHandler`
-
-`MediusUniqueCallbackFindWorldByNameResponseHandler`
-
-`MediusUniqueCallbackGameInfoResponseHandler`
-
-`MediusUniqueCallbackGameList_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackGameListResponseHandler`
-
-`MediusUniqueCallbackGameWorldPlayerListResponseHandler`
-
-`MediusUniqueCallbackGenericChatFwdMessageHandler`
-
-`MediusUniqueCallbackGenericChatMessageHandler`
-
-`MediusUniqueCallbackGenericChatSetFilterResponseHandler`
-
-`MediusUniqueCallbackGetAllClanMessagesResponseHandler`
-
-`MediusUniqueCallbackGetAnnouncementsResponseHandler`
-
-`MediusUniqueCallbackGetBuddyInvitationsResponseHandler`
-
-`MediusUniqueCallbackGetBuddyList_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackGetBuddyListResponseHandler`
-
-`MediusUniqueCallbackGetClanByIDResponseHandler`
-
-`MediusUniqueCallbackGetClanByNameResponseHandler`
-
-`MediusUniqueCallbackGetClanInvitationsSentResponseHandler`
-
-`MediusUniqueCallbackGetClanMemberList_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackGetClanMemberListResponseHandler`
-
-`MediusUniqueCallbackGetClanTeamChallengeHistoryResponseHandler`
-
-`MediusUniqueCallbackGetClanTeamChallengesResponseHandler`
-
-`MediusUniqueCallbackGetGameListFilterResponseHandler`
-
-`MediusUniqueCallbackGetGameListFilterResponseHandler0`
-
-`MediusUniqueCallbackGetIgnoreListResponseHandler`
-
-`MediusUniqueCallbackGetLadderStatsWideResponseHandler`
-
-`MediusUniqueCallbackGetLobbyPlayerNames_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackGetLobbyPlayerNamesResponseHandler`
-
-`MediusUniqueCallbackGetLocationsResponseHandler`
-
-`MediusUniqueCallbackGetMyClanMessagesResponseHandler`
-
-`MediusUniqueCallbackGetMyClansResponseHandler`
-
-`MediusUniqueCallbackGetMyIPResponseHandler`
-
-`MediusUniqueCallbackGetPolicyResponseHandler`
-
-`MediusUniqueCallbackGetServerTimeResponseHandler`
-
-`MediusUniqueCallbackGetTotalChannelsResponseHandler`
-
-`MediusUniqueCallbackGetTotalGamesResponseHandler`
-
-`MediusUniqueCallbackGetTotalRankingsResponseHandler`
-
-`MediusUniqueCallbackGetTotalUsersResponseHandler`
-
-`MediusUniqueCallbackGetWorldSecurityLevelResponseHandler`
-
-`MediusUniqueCallbackInvitePlayerToClanResponseHandler`
-
-`MediusUniqueCallbackJoinChannelFwdResponseHandler`
-
-`MediusUniqueCallbackJoinChannelResponseHandler`
-
-`MediusUniqueCallbackJoinGameResponseHandler`
-
-`MediusUniqueCallbackLadderList_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackLadderPosition_ExtraInfoResponseHandler`
-
-`MediusUniqueCallbackLadderPositionFastResponseHandler`
-
-`MediusUniqueCallbackLobbyWorldPlayerListResponseHandler`
-
-`MediusUniqueCallbackModifyClanMessageResponseHandler`
-
-`MediusUniqueCallbackPickLocationResponseHandler`
-
-`MediusUniqueCallbackPlayerInfoResponseHandler`
-
-`MediusUniqueCallbackPlayerReportHandler`
-
-`MediusUniqueCallbackPostDebugInfoResponseHandler`
-
-`MediusUniqueCallbackProductPurchaseRequestHandler`
-
-`MediusUniqueCallbackProductPurchaseResponseHandler`
-
-`MediusUniqueCallbackReassignGameMediusWorldIDHandler`
-
-`MediusUniqueCallbackRemoveFromBuddyListResponseHandler`
-
-`MediusUniqueCallbackRemoveFromIgnoreListResponseHandler`
-
-`MediusUniqueCallbackRemovePlayerFromClanResponseHandler`
-
-`MediusUniqueCallbackRequestClanTeamChallengeResponseHandler`
-
-`MediusUniqueCallbackRespondToClanInvitationResponseHandler`
-
-`MediusUniqueCallbackRespondToClanTeamChallengeResponseHandler`
-
-`MediusUniqueCallbackRevokeClanInvitationResponseHandler`
-
-`MediusUniqueCallbackRevokeClanTeamChallengeResponseHandler`
-
-`MediusUniqueCallbackSendClanMessageResponseHandler`
-
-`MediusUniqueCallbackSessionBeginResponseHandler`
-
-`MediusUniqueCallbackSessionEndResponseHandler`
-
-`MediusUniqueCallbackSetAutoChatHistoryResponseHandler`
-
-`MediusUniqueCallbackSetGameListFilterResponseHandler`
-
-`MediusUniqueCallbackSetGameListFilterResponseHandler0`
-
-`MediusUniqueCallbackSetLobbyWorldFilterResponseHandler`
-
-`MediusUniqueCallbackSetLocalizationParamsResponseHandler`
-
-`MediusUniqueCallbackSetMessageAsReadResponseHandler`
-
-`MediusUniqueCallbackTextFilterResponseHandler`
-
-`MediusUniqueCallbackTokenResponseHandler`
-
-`MediusUniqueCallbackTransferClanLeadershipResponseHandler`
-
-`MediusUniqueCallbackUniverseNewsHandler`
-
-`MediusUniqueCallbackUniverseStatusList_ExtraInfoHandler`
-
-`MediusUniqueCallbackUniverseStatusListHandler`
-
-`MediusUniqueCallbackUniverseSvoURLHandler`
-
-`MediusUniqueCallbackUniverseVariableInfoHandler`
-
-`MediusUniqueCallbackUpdateClanLadderStatsWide_DeltaResponseHandler`
-
-`MediusUniqueCallbackUpdateClanStatsResponseHandler`
-
-`MediusUniqueCallbackUpdateLadderStatsResponseHandler`
-
-`MediusUniqueCallbackUpdateLadderStatsWideResponseHandler`
-
-`MediusUniqueCallbackUpdateUserStateHandler`
-
-`MediusUniqueCallbackVersionServerResponseHandler`
-
-`MediusUniqueCallbackWorldReportHandler`
+<details open>
+<summary><code>MediusUniqueCallbackAccountDeleteResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountGetIDResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountGetProfileResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountLoginResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountLogoutResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountRegistrationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountUpdatePasswordResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountUpdateProfileResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAccountUpdateStatsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddPlayerToClanResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddToBuddyListConfirmationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddToBuddyListFwdConfirmationRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddToBuddyListFwdConfirmationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddToBuddyListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAddToIgnoreListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackAnonymousLoginResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBanPlayerResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingDetailRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingDetailResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingInfoRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingListRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingLoginRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingLoginResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingTunnelRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBillingTunnelResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBinaryFwdMessageHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackBinaryMessageHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackChannelInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackChannelList_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackChannelListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackCheckMyClanInvitationsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackClanLadderListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackClanLadderPositionResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackClearGameListFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackConfirmClanTeamChallengeResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackCreateChannelResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackCreateClanResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackCreateGameResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackDeleteClanMessageResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackDisbandClanResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackDnasSignaturePostHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackEndGameReportHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackErrorMessageHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileCancelOperationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileCloseResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileCreateResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileDeleteResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileDownloadResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileDownloadStreamResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileGetAttributesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileGetMetaDataResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileListFilesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileSearchByMetaDataResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileUpdateAttributesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileUpdateMetaDataResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileUploadFromClientResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFileUploadResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFindPlayerResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackFindWorldByNameResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGameInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGameList_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGameListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGameWorldPlayerListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGenericChatFwdMessageHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGenericChatMessageHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGenericChatSetFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetAllClanMessagesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetAnnouncementsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetBuddyInvitationsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetBuddyList_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetBuddyListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanByIDResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanByNameResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanInvitationsSentResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanMemberList_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanMemberListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanTeamChallengeHistoryResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetClanTeamChallengesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetGameListFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetGameListFilterResponseHandler0</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetIgnoreListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetLadderStatsWideResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetLobbyPlayerNames_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetLobbyPlayerNamesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetLocationsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetMyClanMessagesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetMyClansResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetMyIPResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetPolicyResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetServerTimeResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetTotalChannelsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetTotalGamesResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetTotalRankingsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetTotalUsersResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackGetWorldSecurityLevelResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackInvitePlayerToClanResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackJoinChannelFwdResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackJoinChannelResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackJoinGameResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackLadderList_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackLadderPosition_ExtraInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackLadderPositionFastResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackLobbyWorldPlayerListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackModifyClanMessageResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackPickLocationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackPlayerInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackPlayerReportHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackPostDebugInfoResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackProductPurchaseRequestHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackProductPurchaseResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackReassignGameMediusWorldIDHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRemoveFromBuddyListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRemoveFromIgnoreListResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRemovePlayerFromClanResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRequestClanTeamChallengeResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRespondToClanInvitationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRespondToClanTeamChallengeResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRevokeClanInvitationResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackRevokeClanTeamChallengeResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSendClanMessageResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSessionBeginResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSessionEndResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetAutoChatHistoryResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetGameListFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetGameListFilterResponseHandler0</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetLobbyWorldFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetLocalizationParamsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackSetMessageAsReadResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackTextFilterResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackTokenResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackTransferClanLeadershipResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUniverseNewsHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUniverseStatusList_ExtraInfoHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUniverseStatusListHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUniverseSvoURLHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUniverseVariableInfoHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUpdateClanLadderStatsWide_DeltaResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUpdateClanStatsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUpdateLadderStatsResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUpdateLadderStatsWideResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackUpdateUserStateHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackVersionServerResponseHandler</code></summary>
+</details open>
+
+<details open>
+<summary><code>MediusUniqueCallbackWorldReportHandler</code></summary>
+</details open>

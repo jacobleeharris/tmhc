@@ -1,6 +1,6 @@
 pre-commit
-splat64[mips]>=0.34.1,<1.0.0
-spimdisasm>=1.33.0,<2.0.0
+splat64[mips]>=0.50.0,<1.0.0
+spimdisasm>=1.42.4,<2.0.0
 colorama
 watchdog
 levenshtein
@@ -8,3 +8,4 @@ cxxfilt
 pre-commit
 ninja_syntax
 mapfile_parser
+argcomplete

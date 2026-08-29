@@ -2,7 +2,7 @@ name: "Twisted Metal: Harbor City"
 sha1: 59695de214d38d1c0af9167412271fe2a446a13a
 options:
   basename: TMHC
-  target_path: config/tmhc.ELF
+  target_path: config/tmhc.elf
   base_path: ../
   compiler: EEGCC
   find_file_boundaries: False
