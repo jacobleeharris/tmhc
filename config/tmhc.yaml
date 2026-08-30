@@ -498,7 +498,8 @@ segments:
       - [0x2c8e00, rodata] # .rodata
       - [0x32bf00, rodatabin] # .gcc_except_table
       - [0x32c080, sdata] # .sdata
-      # - [0xb54, sbss] # .sbss
+      - { vram: 0x242e700, type: sbss, name: .sbss}
+      - { vram: 0x242f280, type: bss, name: .bss}
   - [0x32f6d4, databin] # .reginfo
   - [0x3330b4, databin] # .DVP.overlay
   - [0x338aec, databin] # .debug_str

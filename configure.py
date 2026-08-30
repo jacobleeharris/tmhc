@@ -31,8 +31,8 @@ PRE_ELF_PATH = f"build/{BASENAME}.elf"
 COMMON_INCLUDES = "-Iinclude -Iinclude/tmhc -Iinclude/sdk -Iinclude/sdk/ee -Iinclude/gcc -Iinclude/gcc/gcc-lib -Iinclude/gcc/machine -Iinclude/gcc/sys"
 COMPILER_DIR = f"{TOOLS_DIR}/ee-gcc2.95.3-136/bin"
 
-COMPILER_FLAGS     = "-nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8"
-COMPILER_FLAGS_CPP = "-nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8"
+COMPILER_FLAGS     = "-EL -nostdinc -Wall -fno-exceptions -ffreestanding -O2 -G8"
+COMPILER_FLAGS_CPP = "-EL -nostdinc -Wall -fno-exceptions -ffreestanding -x c++ -O2 -G8"
 
 if sys.platform == "darwin" or sys.platform.startswith("linux"):
     COMPILE_CMD = (
@@ -101,13 +101,13 @@ def build_stuff(linker_entries: List[LinkerEntry]):
     ninja = ninja_syntax.Writer(open(str(ROOT / "build.ninja"), "w"), width=9999)
 
     # Rules
-    cross = "mipsel-linux-gnu-"
-    ld_args = f"-T config/undefined_syms.txt -T config/undefined_syms_auto.txt -T config/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
+    cross = "mips-ps2-decompals-"
+    ld_args = f"-EL -T config/undefined_syms.txt -T config/undefined_syms_auto.txt -T config/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
 
     ninja.rule(
         "as",
         description="as $in",
-        command=f"cpp {COMMON_INCLUDES} $in -o - | {cross}as -no-pad-sections -march=5900 -mabi=eabi -Iinclude -o $out && python3 tools/elf_patcher.py $out gas $override",
+        command=f"cpp {COMMON_INCLUDES} $in -o - | {cross}as -EL -no-pad-sections -march=5900 -mabi=eabi -Iinclude -o $out",
     )
 
     ninja.rule(
